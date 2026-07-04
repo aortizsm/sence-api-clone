@@ -1,0 +1,297 @@
+﻿----------------------- Page 1-----------------------
+
+Integración entre LMS y SIC  
+    (API Gestor Intermedio) 
+
+                      Versión 1  - Septiembre 2021 
+
+        www.ticblue.com     www.linkedin.com/company/ticblue 
+
+----------------------- Page 2-----------------------
+
+                                                
+
+Resumen 
+
+----------------------- Page 3-----------------------
+
+     Resumen Ejecutivo 
+     Introducción 
+
+     La siguiente capacitación se realiza con el objetivo de poder realizar el envío de datos desde una LMS Externa a SIC por  
+     medio de la API REST de Gestor intermedio. Esto, con la ﬁnalidad de que las OTEC puedan enviar de forma periódica la  
+     información de sus cursos por un canal centralizado. 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                     3 
+
+----------------------- Page 4-----------------------
+
+                                           
+
+Proceso de  
+Integración 
+
+----------------------- Page 5-----------------------
+
+     Proceso de integración 
+    Pasos a seguir 
+
+                     1.    Identiﬁcación de datos a enviar 
+
+                     2.    Estructurar información 
+
+                     3.    Obtener autenticación de “Inicio Sesión SENCE” 
+
+                     4.    Prueba de conexión 
+
+                     5.    Envío de datos a API REST 
+
+                     6.    Validación de datos enviados 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                  5 
+
+----------------------- Page 6-----------------------
+
+     Proceso de integración 
+      1.   Identiﬁcación de datos a enviar 
+
+  Curso                              Actividad 
+  Código Oferta                      Código Actividad 
+  Código Grupo 
+  Lista Alumnos 
+
+  Alumno                            Módulo 
+  Rut Alumno                        Código Módulo 
+  DV Alumno                         Tiempo Conectividad 
+  Tiempo Conectividad               Estado 
+  Estado                            Porcentaje Avance 
+  Porcentaje Avance                 Fecha Inicio 
+  Fecha Inicio                      Fecha Fin 
+  Fecha Fin                         Lista Actividades 
+  Fecha Ejecución 
+  Lista Módulos 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                  6 
+
+----------------------- Page 7-----------------------
+
+    Proceso de integración 
+     2.   Estructurar información 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                         7 
+
+----------------------- Page 8-----------------------
+
+      Proceso de integración 
+        3.      Obtener autenticación Sence 
+
+       Con el objetivo de poder identiﬁcar a la OTEC (y que esté vigente) que está realizando la integración a SIC, se debe reutilizar  
+       el Token que se utiliza en el inicio de sesión SENCE o llave de autenticación de RCE. 
+
+       Ejemplo de formato de token: 5EEBF607-25A9-4DB2-A4DD-5D31BDAE3220 
+
+       Una vez identiﬁcado el token de autenticación. Se debe agregar a la estructura JSON mencionada en el punto anterior, los  
+       campos de RUT OTEC, ID del Sistema (siempre se envía el valor 1350) y el token como tal. 
+
+         { 
+            "rutOtec":"11222333-4", 
+            "idSistema":1350, 
+            "token":"5EE5EEEE-5555-BDBD-D4D4-E32E32E32E32", 
+            ... 
+            ... 
+            ... 
+        } 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                                                                  8 
+
+----------------------- Page 9-----------------------
+
+    Proceso de integración 
+     4.   Prueba de conexión 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                       9 
+
+----------------------- Page 10-----------------------
+
+    Proceso de integración 
+    5.    Envío de datos a API REST 
+
+                                                                             + 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                             10 
+
+----------------------- Page 11-----------------------
+
+           Proceso de integración                                                                                                                      { 
+                                                                                                                                                           "id_proceso ": 25, 
+             6.            Validación de datos enviados (OK)                                                                                               "envio": [ 
+                                                                                                                                                               { 
+                                                                                                                                                                   "rutAlumno": 15943354, 
+                                                                                                                                                                   "dvAlumno": "4", 
+                                                                                                                                                                   "tiempoConectividad": 30, 
+                                                                                                                                                                   "porcentajeAvance": 10, 
+                                                                                                                                                                   "estado": 1, 
+                                                                                                                                                                   "fechaInicio": "2021-04-01 00:00:00", 
+                                                                                                                                                                   "fechaFin": "2021-08-01 00:00:00", 
+                                                                                                                                                                   "fechaEjecucion": "2021-07-22 00:00:00", 
+                                                                                                                                                                   "listaModulos": [ 
+                                                                                                                                                                       { 
+                                                                                                                                                                           "codigoModulo": "C51737-O14-M1", 
+                                                                                                                                                                           "tiempoConectividad": 1, 
+                                                                                                                                                                           "porcentajeAvance": 10, 
+                                                                                                                                                                           "estado": 1, 
+                                                                                                                                                                           "fechaInicio": "2021-04-01", 
+                                                                                                                                                                           "fechaFin": "2021-08-01", 
+                                                                                                                                                                           "listaActividades": [ 
+                                                                                                                                                                               { 
+                                                                                                                                                                                   "codigoActividad": "Tarea de prueba" 
+                                                                                                                                                                               } 
+                                                                                                                                                                           ] 
+                                                                                                                                                                       } 
+                                                                                                                                                                   ] 
+                                                                                                                                                               } 
+                                                                                                                                                           ], 
+                                                                                                                                                           "errores": [], 
+                                                                                                                                                           "respuesta_SIC": "El proceso 25 ha ﬁnalizado correctamente, para ver la cantidad de registros y  
+                                                                                                                                                       detalle, diríjase a la pantalla de procesos" 
+                                                                                                                                                       } 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                                                                                                                                                                                                 11 
+
+----------------------- Page 12-----------------------
+
+          Proceso de integración                                                                                                                 "datosError ": [ 
+                                                                                                                                                         { 
+            6.           Validación de datos enviados (Error)                                                                                                "alumno": { 
+
+                                                                                                                                                                 "rutAlumno": "11111111", 
+                                                                                                                                                                 "dvAlumno": "5", 
+                                                                                                                                                                 "tiempoConectividad": 6000, 
+                                                                                                                                                                 "porcentajeAvance": 20, 
+                                                                                                                                                                 "estado": 1, 
+                                                                                                                                                                 "fechaInicio": "2021-04-01 00:00:00", 
+                                                                                                                                                                 "fechaFin": "2021-08-01 00:00:00", 
+                                                                                                                                                                 "listaModulos": [ 
+                                                                                                                                                                     { 
+                                                                                                                                                                         "codigoModulo": "C51737-O14-M1", 
+                                                                                                                                                                         "tiempoConectividad": 600, 
+                                                                                                                                                                         "porcentajeAvance": 50, 
+                                                                                                                                                                         "estado": 1, 
+                                                                                                                                                                         "fechaInicio": "2021-04-01", 
+                                                                                                                                                                         "fechaFin": "2021-08-01", 
+                                                                                                                                                                         "listaActividades": [ 
+                                                                                                                                                                             { 
+                                                                                                                                                                                 "codigoActividad": "Tarea de prueba" 
+                                                                                                                                                                             } 
+                                                                                                                                                                         ] 
+                                                                                                                                                                     } 
+                                                                                                                                                                 ] 
+                                                                                                                                                             }, 
+                                                                                                                                                             "codigo": "012", 
+                                                                                                                                                             "mensaje": "El alumno 11111111-5 no se encuentra registrado." 
+                                                                                                                                                         } 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                                                                                                                                                                         12 
+
+----------------------- Page 13-----------------------
+
+                                         
+
+Preguntas  
+Frecuentes 
+
+----------------------- Page 14-----------------------
+
+     Preguntas Frecuentes 
+
+       1.   ¿Cada vez que tenga que enviar la información se debe cumplir con los pasos indicados?  
+            No, esta secuencia de pasos es para comprender el funcionamiento de la API, pero es recomendable automatizar el  
+            paso 5 teniendo como input lo realizado en los puntos anteriores. 
+
+       2.   ¿Se puede revisar la historia de los datos que se han enviado? 
+            Si, existe un método get adicional (especiﬁcado en el manual de integración), para poder ver el historial de todas las  
+            interacciones que se han tenido con la API. 
+
+       3.   ¿Puedo usar un sistema distinto a moodle para poder integrar a la API? 
+            Si, se puede utilizar cualquier sistema, siempre y cuando, se tenga la totalidad de los datos necesarios 
+
+       4.   Si se falla solamente el envío de algunos datos ¿Se debe enviar todo nuevamente? 
+            No es necesario, la API carga los datos correctamente enviados e indica por qué fallaron los datos incorrectos para  
+            su corrección y envío posterior de forma independiente. 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                      14 
+
+----------------------- Page 15-----------------------
+
+     Preguntas Frecuentes 
+
+       5.    ¿Podré ver la información en SIC inmediatamente después de enviar los datos? 
+             No, al enviar el avance desde las LMS estará visible en SIC al día siguiente, es un proceso nocturno que se realiza a  
+             las 12.00 am todos los días. 
+
+       6.    ¿Se actualiza la información de un alumno si se envía más de una vez? 
+             Si, cada vez que se envían los datos se actualizarán y sobreescribirá la información anterior. Además, una vez  
+             enviado el % avance, la próxima vez que se envíen debe ser mayor al valor previamente enviado. 
+
+       7.    ¿Cual debería ser la cantidad de datos y frecuencia con que se debe enviar la información a la API? 
+             Esto depende de lo que le acomode a cada implementador. Se podrían enviar pocos datos a medida que se  
+             actualice la información o se puede enviar información más consolidada cuando haya más seguridad de enviar la  
+             información. De todas formas, se recomienda enviar al menos una vez al día para poder tener la información visible  
+             en SIC al día siguiente. 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                           15 
+
+----------------------- Page 16-----------------------
+
+     Preguntas Frecuentes 
+
+       8.   ¿Se pueden enviar varios datos a la vez?, y en el caso de los datos enviados y uno genero error, ¿se puede  
+            pesquisar el error del dato y a que alumno pertenece? 
+            Si, se puede enviar una lista de alumnos, como también, se puede enviar solo un alumno. De esta manera, la API  
+            responderá identiﬁcando cual es el dato que tiene el problema en caso de existir. 
+
+       9.   ¿Estará disponible el material de esta presentación? 
+            Si, SENCE entregará la presentación, video de ejercicio, video de capacitacion, listado de preguntas y respuestas. 
+
+      10.   ¿Cómo canalizar las consultas que nos puedan ir saliendo al realizar la API? 
+            Canalizar por medio de correo administradorelearning@sence.cl. 
+
+      11.   ¿Esta API ya está disponible en producción? 
+            Si, ya se puede empezar a usar desde ya. 
+
+      12.   ¿Cual es el alcance de esta API? 
+            Esta API reﬁere a la conexión de sistemas para la lectura de datos de avance. Distinto es integración de asistencia y  
+            botón de acceso, estos se mantiene tal cual está actualmente. 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                     16 
+
+----------------------- Page 17-----------------------
+
+     Preguntas Frecuentes 
+
+      13.   ¿Que sucede con los cursos iniciados y que no contarán con ésta integración por medio de la API, como lo  
+            debemos ejecutar? 
+            Se puede recoger retroactivamente la información. 
+
+      14.   ¿Cuando la API ya se encuentre integrada, será más ágil el pago desde SENCE a las OTEC?  
+            Si, teniendo los datos de manera periódica, se podrán hacer más rápido los cierres de curso y gestión posterior de  
+            pagos. 
+
+      15.   ¿Cual es el formato del token correcto? 
+            Todo el token debe ser con caracteres en mayúscula. 
+
+      16.   ¿Cuando se va a entregar el material de apoyo? 
+            Una vez ﬁnalicen todas las capacitaciones a las OTEC, se entregará el material de apoyo para tener la última versión  
+            de estas. 
+
+PROPUESTA TÉCNICO ECONÓMICA                                                                                                   17 
+
+----------------------- Page 18-----------------------
+
+                                        
+
+Demostración  
+práctica 
+
+----------------------- Page 19-----------------------
+

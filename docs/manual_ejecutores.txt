@@ -1,0 +1,1217 @@
+﻿----------------------- Page 1-----------------------
+
+MANUAL 
+
+PARA EJECUTORES 
+
+ Aula Digital – Cursos E-learning 
+
+                                                               1 
+
+----------------------- Page 2-----------------------
+
+INTRODUCCIÓN 
+
+Hace  algunos  años,  la  educación  a  distancia  era  considerada  como  una  opción  para 
+aquellas personas que no tenían posibilidad de asistir a la educación presencial. 
+
+Sin embargo, con el surgimiento de las Tecnologías de la Información y la Comunicación 
+(TIC’s),  junto con  una  conceptualización     de  la  educación  como    un  proceso   que  se 
+extiende   a  lo  largo  de  la  vida,  han  hecho    que   la educación    a  distancia  pueda 
+considerarse en estos momentos como una alternativa real a la educación presencial. 
+
+El  uso  de las  tecnologías  en  la  educación  a  distancia  ha  permitido  una  visión   más 
+moderna de este tipo de modalidad y ha conseguido, gracias a ellas, superar uno de los 
+mayores obstáculos que históricamente habían impedido que se posicionara como una 
+modalidad de enseñanza válida y eficiente; como era la posibilidad de interacción entre 
+los propios participantes y tutores. 
+
+Por  este  motivo  se  desarrolló  la  nueva  plataforma  de  gestión  del  aprendizaje  virtual 
+SENCE, Aula  Digital. A continuación se explica en detalle como usar la plataforma y  los 
+diferentes componentes, para poder construir los módulos de aprendizaje. 
+
+                                                                                        2 
+
+----------------------- Page 3-----------------------
+
+MANUAL PARA EJECUTORES 
+AULA DIGITAL 
+
+1.   INGRESO A AULA DIGITAL 
+
+2.  ASPECTOS PREVIOS A CONSIDERAR 
+
+3.  ¿CÓMO DISEÑO EL CURSO A EJECUTAR? 
+
+4.   INICIO Y NAVEGACION EN BIGBLUEBUTTON BBB 
+
+5.   HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+6.  ACCESIBILIDAD 
+
+7.  SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+8.  SOPORTE A EJECUTORES 
+
+9.  ANEXOS 
+
+                                                           3 
+
+----------------------- Page 4-----------------------
+
+1. INGRESO A AULA DIGITAL 
+
+Como    primer   paso,   para  acceder   al  sistema   de  Aula 
+Digital   SENCE,      deberá     usar    el    siguiente    link 
+https://auladigital .sence.cl/ . 
+
+                                                       4 
+
+----------------------- Page 5-----------------------
+
+1. INGRESO A AULA DIGITAL 
+
+Se  habilitarán  previamente  los  RUT de  quienes  cumplan 
+el  rol  de  editores   de  curso,  a   nivel  multimedia    e 
+instruccional. 
+
+Para ingresar se debe digitar el RUT, sin puntos, con guión 
+y dígito verificador  Por ejemplo, si el RUT es  12.345.678- 
+9,  el  usuario será,  12345678-9  Luego de  ingresar el  RUT 
+deberás  hacer clic en  la flecha verde  al costado derecho 
+del campo RUT 
+
+Posteriormente deberás hacer clic en el botón A 
+
+                                                     5 
+
+----------------------- Page 6-----------------------
+
+1.  INGRESO A AULA DIGITAL 
+
+Realizado  el  paso  anterior, el sitio del  Aula  Digital,  te 
+redirigirá  al  registro  de  datos  de  SENCE donde  podrás 
+ingresar con  tu ClaveUnica , 
+
+                                                      6 
+
+----------------------- Page 7-----------------------
+
+1.  INGRESO A AULA DIGITAL 
+
+Validado    el  ingreso  con  la  ClaveÚnica  serás  dirigido  al 
+sitio de Aula Digital SENCE. 
+
+A continuación,    visualizarás  un mensaje que     indica que 
+serás  dirigido  a tu  curso,  en  la imagen    destacada   en 
+recuadro rojo. 
+
+                                                      7 
+
+----------------------- Page 8-----------------------
+
+2. ASPECTOS PREVIOS A CONSIDERAR  
+
+Antes    de   diseñar   el    curso,   el  ejecutor   deberá     tener   presente    que 
+dispondrá de 3 roles con diferentes atributos o privilegios            para el proceso 
+de diseño, creación      y  ejecución de sus cursos. 
+
+A continuación se indican las funciones de cada uno de estos roles (*): 
+
+Diseñador de  curso: o  experto  disciplinar: Quien(es)             tenga(n)  asignado 
+este   rol  podrán     en   su  respectivos     cursos   diseñar    las  actividades    y 
+materiales específicos      aplicando los recursos tecnológicos educativos que 
+dispone el Aula Digital para ello. 
+
+Tutor  Académico:       Es quien  conduce  las sesiones  sincrónicas          en  la sala 
+virtual a través del Big Blue Button, califica los instrumentos de evaluación 
+(  pruebas controles  y  rubricas),      facilita  y  responde  las  preguntas, dirige 
+los  foros,  tutorías   grupales    o  individuales,   Sin  embargo      no  tendrá    los 
+atributos de agregar recursos o actividades como              si lo tiene el Diseñador 
+de curso. 
+
+Tutor   administrativo      : Responsable      de   brindar   apoyo    y  ayuda    a   los 
+participantes, en  aspectos técnicos  y  también  administrativos  durante  el 
+transcurso    de   una   actividad    de  capacitación.     hace   seguimiento     a   los 
+participantes, y colabora en       las conexión del participante a la plataforma. 
+
+(*) Definición  de los roles  en Instructivo  de Diseño  y Desarrollo  de Cursos Modalidad  a 
+Distancia E-Learning para Programas Sociales 2021.)                             8 
+
+----------------------- Page 9-----------------------
+
+ 3. ¿CÓMO DISEÑO EL CURSO A EJECUTAR? 
+
+El  diseñador  de  curso  deberá  en  este  curso   en  blanco, 
+agregar     el    contenido,     recursos     y    actividades, 
+correspondiente  a cada uno de los módulos de este curso, 
+conforme a la propuesta presentada. 
+
+Al interior de la plataforma, es posible cambiar a un curso 
+diferente  (en  la  medida  de  que  existe  más  de  un  curso 
+adjudicado    o  seleccionado),   utilizando  la  opción   “Mis 
+Cursos”,  destacada    en  el recuadro   rojo.  Esta  opción  le 
+permitirá   navegar   de  manera    directa  entre  sus  cursos 
+adjudicados,     para    realizar   las   configuraciones      y 
+monitoreos necesarios. 
+
+Esta opción es factible si   el perfil otorgado está asignado 
+a distintos cursos del ejecutor. (estos son ejemplos) 
+
+                                                       9 
+
+----------------------- Page 10-----------------------
+
+3. ¿CÓMO DISEÑO EL CURSO A EJECUTAR? 
+
+Al interior del curso en blanco ,  para agregar contenidos 
+y  recursos  a  cada   modulo,  se  debe  activar  el modo 
+edición,  haciendo  clic  en  el  icono  superior  derecho  del 
+engranaje,   (destacado   en  recuadro   rojo)  para  luego 
+seleccionar  la opción   del  menú   desplegable,  “Activar 
+Edición”. 
+
+IMPORTANTE: 
+
+✓   NO   SE   DEBEN   ELIMINAR    LOS   CÓDIGOS     DE  LOS 
+    MÓDULOS, PORQUE GENERA ERROR EN LECTURA DE 
+    INFORMACIÓN A SIC. 
+
+✓   CURSOS    EN  BLANCO,    TENDRÁN     POR   DEFECTO   LA 
+    “INTEGRACIÓN ASISTENCIA  SENCE”,  ESTA        NO  DEBE 
+    SER    ELIMINADA.      DE     LO    CONTRARIO,      LOS 
+    ESTUDIANTES NO PODRÁN INGRESAR AL CURSO. 
+
+                                                   10 
+
+----------------------- Page 11-----------------------
+
+3. ¿CÓMO DISEÑO EL CURSO A EJECUTAR? 
+
+Luego de  “Activar  Edición”, tendrá  la opción  de      cambiar 
+los  nombres tanto  del  curso  como  de  los  módulos.      Para 
+ello, deberá   hacer clic en la opción “Editar“ , en el costado 
+derecho de cada titulo  del curso, y también  en  los títulos 
+de los  módulos. 
+
+En  “  Editar”  al desplegar     el  menú  de  la  lista,  se  debe 
+seleccionar  la opción  “Editar tema”,  lo que  equivale  a  un 
+módulo     de  trabajo,   para   cambiar    la  configuración    e 
+identificación del módulo (nombre). 
+
+Si  se   requiere   agregar    actividades   o   recursos   debe 
+seleccionar  el  +  en  “Añadir  una actividad  o  un recurso”. 
+Esto se hace por cada Módulo. 
+
+Para  agregar   una  modulo  nuevo,  se    debe  seleccionar    la 
+opción  +   en  “Añadir  secciones”  (Al  final  de  la  pantalla). 
+Puede   agregar   módulos     nuevos   teniendo   presente    que 
+podrían ser para material adicional, opcional como anexos 
+con documentos de lectura o videos, etc. 
+
+                                                      11 
+
+----------------------- Page 12-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+ Un   aspecto    fundamental      a  la  hora   de  diseñar    un  curso,   es  la  configuración    del 
+ contenido, sus recursos y actividades. 
+
+ Una configuración exitosa, no solo facilitará la navegación del participante por el curso, 
+ sino  que  permitirá  monitorear  de  manera  correcta  los  avances  de  estos,  dentro  del 
+ curso.  Por el  contrario,  si  el  curso  no se  configura  de  manera  correcta,  se  generarán 
+ distorsiones dentro de  los estados de avance,  lo que  puede incidir directamente en el 
+ cierre de los cursos, la validación de información, y por ende, en el pago respectivo. 
+
+ Las  opciones  de  configuración  de  contenido  editables,  varían          en  virtud   del  tipo  de 
+ recurso  o  actividad    (BigBlueButton,     H5P,  archivos,  etc).  No  obstante,  se    recomienda 
+ utilizar: 
+
+ ✓    Finalización de actividad 
+ ✓    Restricciones de acceso 
+ ✓    Configuración de restricciones por módulos 
+
+                                                                                             12 
+
+----------------------- Page 13-----------------------
+
+ 3. CONFIGURACIÓN DE CONTENIDO 
+
+Otro aspecto a considerar a la hora de configurar los      contenidos de un curso,    son los 
+parámetros vinculados  a tiempos  de conexión o dedicación al curso,  los cuales        están 
+predeterminados en Aula  digital. Observar aquello  permitirá una adecuada  lectura de 
+datos al SIC. 
+
+En clases sincrónicas ( Big Blue Button) 
+
+➢   Numero     máximo de duración de la sesión ( 120       Minutos). Al exceder este rango 
+    automaticamente se cerrará la sesion. 
+
+➢   Tiempo  de  inactividad:  Minutos de  inactividad,  al  exceder  este  rango,   la cita  se 
+    cerrará por inactividad. ( 30 minutos) 
+➢   Minutos    a considerar   si un  usuario   esta  inactivo para   enviar  un  mensaje   de 
+    advertencia y comprobar su inactividad ( 30 Minutos) 
+
+ En Aula Digital 
+
+➢   Dedicación al curso (45 minutos) entre el primer clic y el segundo. 
+➢   Cierre  por inactividad (60 minutos) si  no hay movimiento de usuario, se cerrará  la 
+    sesión. 
+
+                                                                                   13 
+
+----------------------- Page 14-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Luego   de   seleccionar   “Añadir    una   actividad   o  un 
+recurso”,  se  desplegará   la  lista  completa  de  opciones 
+disponibles  en  Aula  Digital.  (formatos  de  actividades  y 
+recursos). Se  podrán cargar  controles,  paquetes Scorm, 
+foros,   documentos,     material    multimedia,    formatos 
+interactivos  H5P,    recursos  LTI,  BigBlueButton,    entre 
+otros. 
+
+Para revisar la lista de recursos y actividades disponibles 
+y  el  detalle  de cada  uno ver Anexo  N°1 del  Instructivo 
+de   Diseño    y  Desarrollo    de   Cursos   Modalidad      a 
+Distancia E-Learning para Programas Sociales 2021. 
+
+                                                     14 
+
+----------------------- Page 15-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Para configurar un recurso “ Tarea”, tal como se explicó 
+anteriormente, en el  modulo donde se desea crear , se 
+debe seleccionar “Añadir una actividad o un recurso”, y 
+de la lista que se despliega escoger la opción “ Tarea” y 
+presionar “ Agregar” 
+
+                                                  15 
+
+----------------------- Page 16-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+A  continuación  se  desplegará  la  lista  de  opciones  para 
+configurar     el   recurso     “Tarea”,     conforme      a    los 
+parámetros que se indican. 
+
+Uno de lo parámetros a configurar dentro de la “Tarea” 
+es la “Calificación” de esta , aunque esta información no 
+se  leerá al SIC es  un buen instrumento de  medición de 
+los  aprendizajes    esperados     y  debe   considerarse     para 
+asignar    los   estados    de    participantes     en   aquellos 
+programas       donde     el   criterio    de    evaluación     es 
+determinante para la aprobación o no del curso. 
+
+. 
+
+                                                          16 
+
+----------------------- Page 17-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Agregada una actividad, se debe configurar la “finalización 
+de actividad” dentro de cada módulo. 
+
+✓   Acceder  a  “Finalización de  actividad”, y  en  la  opción 
+    de   “Rastreo  de  finalización”  seleccionar  la  opción 
+    “Mostrar   la actividad  como    completada   cuando    se 
+    cumplan las condiciones”. 
+
+✓   En  la  opción “Requerir  ver”,  se  debe  seleccionar  la 
+    opción   “  El Estudiante  debe  ver esta  actividad para 
+    finalizarla”. De esta forma, se asegura que el estudiante 
+    deba acceder a  la actividad y  recurso respectivo, para 
+    que la plataforma reconozca su avance. 
+
+✓   Si un  recurso  es configurado   como   complementario, 
+    debe seleccionar  la opción “No indicar finalización de 
+    la actividad” 
+
+Nota: 
+Todos los módulos deben tener actividades obligatorias. 
+
+                                                   17 
+
+----------------------- Page 18-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Al  costado   derecho    de  cada   actividad,  veremos    un 
+pequeño cuadrado, el que deberá ser con      línea punteada, 
+esto   significa que  está  marcado  como    obligatorio  y el 
+participante  una vez  que  consuma  el  recurso o  actividad 
+automáticamente se marcará ese registro en los sistemas 
+y se contabilizará como recurso consumido en SIC. 
+
+                                                    18 
+
+----------------------- Page 19-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+La  configuración     de   restricciones   de   acceso,   permite 
+añadir    a  cada    recurso    y  actividad    el  carácter    de 
+obligatoriedad, para asegurar un orden lógico y coherente 
+en el consumo de los contenidos por cada participante. 
+
+Se  evitará  así,  la  revisión  intercalada  de  actividades  del 
+curso,  o  que,  por ejemplo,  un  participante  pueda  rendir 
+una    prueba    o  evaluación     sin  haber    consumido      los 
+recursos  obligatorios  previos  necesarios  previos  para  el 
+aprendizaje. 
+
+Para acceder a esta opción luego de agregada la actividad 
+o  recurso de debe seleccionar “Restricciones de acceso” 
+y  “Añadir restricción” 
+
+                                                         19 
+
+----------------------- Page 20-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Dentro de las restricciones de acceso configurables, se dispone de: 
+
+✓   Finalización   de  actividad:  Permite   que   la visualización   del 
+    recurso se condicione a completar previamente una actividad. 
+
+✓   Fecha: Permite configurar el acceso al recurso desde o hasta un 
+    día y hora predeterminada. 
+
+✓   Calificación:  Exige  tener  una  calificación  mínima   dentro   del 
+    curso para acceder al recurso. 
+
+✓   Perfil de  usuario: Controla el  acceso al  recurso, en  base a  los 
+    campos  seleccionables,  como  tener  un  determinado  apellido, 
+    ser de un país específico, etc. 
+
+✓   Conjunto de  restricciones: Permite aplicar  un conjunto  de  las 
+    restricciones mencionadas con anterioridad. 
+
+Dentro  de  este  grupo  de  restricciones,  se  recomienda  utilizar  la 
+restricción de Finalización de actividad, que permitirá articular los 
+contenidos del curso, dándoles un orden lógico a cada uno de ellos. 
+
+                                                               20 
+
+----------------------- Page 21-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Para configurar  la restricción de acceso de Finalización de 
+actividad,   se  deberá   seleccionar   dicha   opción,   y  luego 
+elegir las siguientes opciones: 
+
+En  Elegir,  se  debe  seleccionar  la  actividad  o  recurso  que 
+debe    ser  consumida      previamente,     para   visualizar   el 
+contenido que se está editando. 
+
+Al  costado  derecho,  se  debe  seleccionar  la  opción  “debe 
+marcarse     como     completada”,     para   asegurar    que    el 
+participante finalice  la  actividad  previa,  antes  de  pasar  a 
+visualizar el contenido que se está editando. Para finalizar, 
+se debe  presionar la opción “Guardar cambios y  regresar 
+al curso” 
+
+Como se puede observar en la imagen, el recurso “Prueba 
+módulo 1”, quedó restringido y  no estará disponible hasta 
+que la actividad “Clase introductoria” esté marcada como 
+realizada. 
+
+                                                       21 
+
+----------------------- Page 22-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Para configurar  la  restricción de acceso  por  módulos, se 
+deberá  en  primer  lugar,  activar  la  edición  del  curso  en 
+cuestión 
+
+Luego, en  el  módulo a  configurar  la  restricción, se  debe 
+seleccionar   el  menú   “editar”   que   está  al costado   del 
+nombre  del    módulo,  y   luego  se  debe   hacer  clic  en  la 
+opción “editar tema”. ( tema es módulo) 
+
+Posteriormente, se debe acceder al menú “Restricciones 
+de acceso” y hacer clic en el botón “Añadir restricción”. 
+
+Finalmente,  para  configurar     la  fecha  y hora  en  que  se 
+permitirá el acceso al  módulo y  sus contenidos, se debe 
+seleccionar la opción “fecha”. 
+
+                                                      22 
+
+----------------------- Page 23-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+Para  revisar la configuración  y  correcta ejecución  de 
+actividades  evaluativas como   controles  y evaluaciones 
+diagnosticas   (Evaluaciones  por  Módulo,   etc) creadas 
+directamente   en  Aula Digital,  se pueden  previsualizar, 
+haciendo   clic en  el  recurso  y  luego  en   la opción 
+“previsualizar el cuestionario ahora”. 
+
+                                                 23 
+
+----------------------- Page 24-----------------------
+
+3. CONFIGURACIÓN DE CONTENIDO 
+
+ Una vez  dentro  del  recurso  evaluado,  se  podrán  revisar 
+ las preguntas, sin importar el tipo  de  prueba, control de 
+ alternativas, evaluación con rubricas o interactivo. 
+
+ Cuando   la  evaluación  ya  esté  en  ejecución    se  podrá 
+ verificar si al finalizar el intento de prueba se genera una 
+ nota.  De esta  forma  sabremos  si  se  aplicó  una  correcta 
+ configuración de evaluación aplicada. 
+
+                                                    24 
+
+----------------------- Page 25-----------------------
+
+  3. CONFIGURACIÓN DE CONTENIDO 
+
+ RECOMENDACIONES: 
+
+✓   Revisar  que  controles   y pruebas,  tengan   la  correcta  configuración  de 
+
+    notas 
+
+✓   Revisar  que  el  contenido  obligatorio  esté  con  la  configuración  correcta 
+
+    que asegure la realización por parte del estudiante. 
+
+✓   Separar y destacar el contenido complementario dentro del curso. 
+
+✓   Agregar   Foros  generales  de  soporte,  para  mantener  una  comunicación 
+
+    fluida con los participantes del curso. 
+
+                                                                         25 
+
+----------------------- Page 26-----------------------
+
+4. INICIO Y NAVEGACIÓN EN BIGBLUEBUTTON BBB 
+
+¿QUÉ ES BIGBLUEBUTTON (BBB)?  
+
+Es  un  sistema  que   se  utiliza para el  desarrollo de  actividades, 
+presentaciones   (PDF, videos)  y  también   puede  ser  utilizada para 
+realizar  reuniones    de   videoconferencia,    permite   una    mejor 
+comunicación (estudiante- tutor; estudiante-estudiante). 
+
+Esta  herramienta   facilita la colaboración,  como    por  ejemplo   la 
+mensajería    instantánea,   capacidad    para   compartir   escritorio, 
+                                                                                                   Comunicación 
+documentos y grabar la sesión. 
+
+El tutor Académico es el organizador, ya que invita a los participantes 
+desde   distintas ubicaciones  geográficas  para que   se conecten   en 
+tiempo real con conexión a Internet. 
+
+Se puede acceder a través de: 
+
+✓   Dispositivos móviles (Celular, Tablet) 
+✓   Computador 
+
+                                                                                                                                                       26 
+
+----------------------- Page 27-----------------------
+
+4. INICIO Y NAVEGACIÓN EN BIGBLUEBUTTON 
+
+Para  iniciar una actividad  en  el curso  deberá  tener  creado  el 
+complemento de BBB  previamente. 
+
+Para agregar el complemento, se deben seguir los pasos señalados 
+anteriormente sobre “creación de contenido. (1 y 2) 
+
+IMPORTANTE: 
+Si todos los módulos tendrán actividades sincrónicas, se debe crear 
+al menos un complemento de BBB por  cada módulo. 
+
+Luego  de  agregar  el complemento,    para iniciar Haz  clic en el 
+icono de BBB y luego en   Unirse a la sesión. 
+
+                                                          27 
+
+----------------------- Page 28-----------------------
+
+4. INICIO Y NAVEGACIÓN EN BIGBLUEBUTTON 
+
+Para  el  control  de  acceso  al  sistema BBB,  se preguntará  ¿cómo 
+quieres  unirte  al audio?  Deberá   verificar si tiene disponible  el 
+micrófono del equipo a utilizar y luego elegir la opción. 
+
+Micrófono: al seleccionar esta opción se abrirá una pestaña donde 
+realizarás una  prueba  de  audio,  aquí debes   seleccionar Si o  No 
+según corresponda. 
+
+Esta prueba de eco, garantiza tener una calidad mínima, para poder 
+realizar preguntas y generar conversaciones fluidas. 
+
+                                                            28 
+
+----------------------- Page 29-----------------------
+
+4. INICIO Y NAVEGACIÓN EN BIGBLUEBUTTON 
+
+Según    las opciones    revisadas   anteriormente,     la segunda     “Solo 
+escuchar”, es ingresar a la sala solo en modalidad de escucha, esto 
+en  caso  sea  necesario  para  impartir  la clase  o  en  el  caso  que  no 
+contemos con     micrófono. 
+
+Solo escuchar: al seleccionar esta opción aparecerá un mensaje al 
+costado derecho de la pantalla “Has ingresado a la conferencia de 
+audio”,  es  decir,  solo  podremos  escuchar  y  escribir  por  el  chat, 
+para realizar preguntas o generar      conversaciones. 
+
+                                                                  29 
+
+----------------------- Page 30-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Dentro del sistema, al lado derecho de la pantalla, al hacer clic en 
+que muestra 3 puntos blancos,          se desplegará un menú, donde 
+podrás: desplegar a pantalla completa, abrir configuración, ayuda, 
+finalizar sesión y salir, estas son las funciones más utilizadas. 
+
+ Puedes grabar la sesión haciendo clic en “Iniciar grabación”. 
+
+ Nota   : Recuerda    al abandonar     la sala  virtual  debes   parar  la 
+ grabación  para  que  así  el  sistema  no siga  con  la grabación  y  no 
+ utilice espacio de grabación innecesaria. 
+
+ Las siguientes funciones permiten: 
+
+                                                                30 
+
+----------------------- Page 31-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+  En el ícono  del engranaje,  se encuentra  el  panel de  restricciones 
+  de la sesión para el administrador principal (Tutor Académico) . 
+
+  Estas  opciones   te  permitirán   habilitar y  deshabilitar  distintas 
+  opciones a los participantes para así personalizar la sala virtual . La 
+  opción  señalada  en   la  imagen  se  encuentra  al  costado  superior 
+  izquierdo de la ventana principal. 
+
+  ✓   Borrar todos  los íconos  de  estado: consiste  en  eliminar  los 
+      íconos utilizados por los participantes. 
+  ✓   Deshabilitar audio a todos los participantes. 
+  ✓   Deshabilitar   audio  a  todos   los  participantes  excepto   a 
+      presentador. 
+  ✓   Guardar nombres de usuario: obtener el listado de todos los 
+      participantes conectados. 
+  ✓   Bloquear espectadores 
+
+                                                              31 
+
+----------------------- Page 32-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Otra funcionalidad es el Chat público y privado; cada participante 
+podrá escribir un texto que será visible a todos los demás usuarios 
+o directamente al tutor. 
+
+Al hacer clic en          se desprenderá un menú que te permitirá: 
+guardar, copiar y limpiar el chat. 
+
+Para  iniciar  un chat  privado,  se  debe  hacer clic  derecho  sobre  el 
+usuario con el cual se desea iniciar este tipo de chat y seleccionar 
+la opción Iniciar el chat privado. 
+
+                                                                 32 
+
+----------------------- Page 33-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+En “Usuarios” aparecerán todos  los  participantes conectados. Al 
+hacer  clic   en   el  ícono   de  engranaje     el  rol  de  Tutor   académico 
+podrás  realizar entre  otras  funcionalidades,  el  deshabilitar  audio 
+de todos los usuarios. 
+
+. 
+
+                                                                          33 
+
+----------------------- Page 34-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+También es posible ingresar a “Notas compartidas”.         Aquí tanto el 
+estudiante como el tutor pueden ingresar información. 
+
+Al  hacer clic en      esta opción  le permitirá Importar/Exportar la 
+información ingresada. 
+
+El beneficio de esto, a diferencia de la opción de chat, es dejar una 
+bitácora   colaborativa    de    apuntes    de   los   participantes   o 
+información  relevante  entregada  por  parte  del  tutor,  en  caso  de 
+evaluaciones posteriores del módulo cursado. 
+
+                                                                34 
+
+----------------------- Page 35-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Esta opción,  sirve  para  dividir  la clase  en  grupos  de  trabajo  más 
+pequeños, para aplicar actividades o evaluaciones grupales. 
+
+Al  hacer   clic  en  “Creación    de   grupo”    permitirá   realizar  las 
+siguientes acciones: 
+
+✓    Número de salas: puedes crear hasta 8 salas. 
+✓    Duración (minutos): esta opción permite definir el tiempo que 
+     designarás por actividad. 
+✓    El estudiante    puede    elegir  en  qué   grupo    de  sala  desea 
+     participar, esto va a depender de la configuración que realiza el 
+    tutor  haciendo  clic  en  “Permitir a  los  usuarios  seleccionar  el 
+    grupo de trabajo a ingresar”. 
+✓    En  la opción  “No asignado” deberás  arrastrar  el  nombre  del 
+     participante a la sala que deseas asignar. 
+✓    Finalmente, haz clic en “Crear”. 
+
+                                                                 35 
+
+----------------------- Page 36-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+La opción “Escribir subtítulos” se utiliza cuando algún participante 
+no  tiene  acceso  al  audio  o tiene  discapacidad   auditiva,  por  lo 
+tanto, esta herramienta permite que todos participen. 
+
+Una  vez   realizado  el clic en  “Escribir subtítulo”   se abrirá  una 
+ventana,   donde   tendrás   que  seleccionar   el idioma   y estilos  a 
+utilizar. Luego  haz  clic en “Iniciar”, 
+
+                                                               36 
+
+----------------------- Page 37-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Para realizar una presentación o mostrar un documento dentro de la 
+clase  que  se  transmite   en  vivo, debes   hacer   clic en “Subir   una 
+presentación”. Dentro de la misma pantalla se abrirá  la opción que 
+te permitirá cargar un archivo. 
+
+Al  hacer  clic  sobre  el  recuadro, debes  buscar  en  tu  computador  o 
+móvil el archivo (PDF, Word, Excel, PowerPoint) que deseas mostrar, 
+también puedes arrastrar el archivo directamente hacia el recuadro. 
+
+                                                                37 
+
+----------------------- Page 38-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Una   vez  seleccionado    el archivo,   se visualizará  en   la lista de 
+documentos  cargados.  Finalmente  haz  clic  en  “Cargar”.  Además, 
+esta  lista te   permitirá  seleccionar   el  documento     que   deseas 
+mostrar, haciendo clic en el ticket  (círculo), podrás tener  una lista 
+pre-cargada, para utilizar archivos diferentes en el transcurso de la 
+clase. 
+
+Finalmente,    se   mostrará    el documento      cargado.    El sistema 
+transformará    todos  los  archivos  a  PDF,  una  vez  cargados,   para 
+evitar  perder  el  formato  y  los  participantes  podrán  ver  en  vivo, 
+cada archivo compartido. 
+
+                                                                38 
+
+----------------------- Page 39-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+En   base    al  procedimiento      anterior,   para   permitir   que    los 
+participantes    descarguen    el  documento      que  estás   mostrando, 
+debes hacer clic en el ícono            y luego cargar. 
+
+Así,  el  clic  de  descarga  con  el  ícono       se  habilitará  para  los 
+participantes donde descargará el documento original subido en la 
+presentación.. 
+
+                                                                  39 
+
+----------------------- Page 40-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Para   poder   explicar  de  mejor   forma   el  contenido    a  presentar, 
+tenemos     4  herramientas     diferentes   de   pizarra   virtual.  Estas 
+pueden ser utilizadas solo si el tutor lo permite. 
+
+              Al  hacer   clic  sobre   este   ícono,   se  desprenderán 
+              diferentes  opciones,    como   por  ejemplo    destacar   un 
+              título  (texto,  línea, elipse, triángulo,  rectángulo,  lápiz, 
+              panorama). 
+
+                Se  utiliza  para  deshacer  las  anotaciones  realizadas 
+                con el ícono anterior. 
+
+              Esta   herramienta     sirve   para   eliminar    todas    las 
+              anotaciones. 
+
+              Activa  el  modo  multiusuario  de  pizarra,  permite  que 
+              los    participantes     también      utilicen   todas     las 
+              herramientas antes mencionadas. 
+
+                                                                  45 
+
+----------------------- Page 41-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Otra  opción  de  material  para  compartir  en  vivo,  es  la  opción  de 
+video, para esto debes hacer clic en “Buscar un video externo”. 
+
+Se  abrirá  una ventana  que te  permitirá  ingresar  la  URL (YouTube, 
+Vimeo). Finalmente, haz clic en “Compartir un nuevo video”. Y este 
+se visualizará para todos los alumnos presentes en la sala virtual el 
+momento de transmitir la clase. 
+
+                                                                 41 
+
+----------------------- Page 42-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Otra herramienta para usar en las clases en vivo, son las encuestas 
+rápidas,  las cuales  nos  permiten dar  énfasis  a  una  pregunta que 
+podamos    efectuar   transmitida   por  voz  y que   los  estudiantes 
+puedan  marcar  la  respuesta  que  creen  correcta.  Para  acceder  a 
+ella, deberás seleccionar la opción “Iniciar una encuesta”. 
+
+Selecciona  una de  las opciones  para iniciar tu  encuesta, según el 
+tipo  de   pregunta   que   realizarás al  grupo   de   estudiantes   y 
+temática. También puedes hacer una encuesta más personalizada, 
+para eso haz clic en “Encuesta personalizada”. 
+
+                                                              42 
+
+----------------------- Page 43-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Se  desplegarán    5  casillas, donde   será  posible  agregar 
+respuestas de encuesta (rojo, negro). 
+
+Al hacer clic en “Iniciar encuesta personalizada” o seleccionar 
+una encuesta predeterminada, podrás observar las respuestas 
+en vivo. 
+
+                                                           43 
+
+----------------------- Page 44-----------------------
+
+5. HERRAMIENTAS PARA LAS CLASES EN BIGBLUEBUTTON 
+
+Si deseas que  los participantes vean  los resultados, haz clic en 
+“Publicar resultados de  la cuenta” y  se visualizarán  al costado 
+derecho de la pantalla. 
+
+                                                           44 
+
+----------------------- Page 45-----------------------
+
+6. ACCESIBILIDAD 
+
+Dentro  de   la  plataforma,  se  encontrará la  opción  de barra  de 
+accesibilidad, la cual cuenta con diferentes opciones de uso: 
+
+✓   Aumentar    o  disminuir  de  forma   automática   la letra  de la 
+    plataforma usando los botones con los iconos de lupas, 
+✓   Cambiar la fuente de las páginas con el ícono con la letra T, 
+✓   Buscar  sinónimos  de  palabras  seleccionando  una  palabra y 
+    luego presionando el ícono de libro 
+✓   Leer los textos con audio, al seleccionar una palabra y  luego 
+    hacer clic en el ícono de parlante, 
+✓   Cambiar los contrastes del sitio, con la opción del botón de 4 
+    colores. 
+
+Para devolver los cambios, se puede hacer clic en el icono con la 
+fecha  azul que apunta a  la izquierda y  para finalmente  cerrar  la 
+barra, se usa el icono con la cruz roja. 
+
+                                                            45 
+
+----------------------- Page 46-----------------------
+
+6. ACCESIBILIDAD 
+
+Otra opción de accesibilidad que estará presente en Aula Digital, 
+es  un  bloque  presente al  costado  derecho  del  sitio,  el  cual  nos 
+permitirá  cambiar  al  contraste  del  sitio,  como  lo  muestran  los 
+iconos   amarillo,   celeste   y  negro,    los  cuales   cambiarán     los 
+contrastes según cada color. 
+
+Otra opción será la de guardar  la configuración, la cual se activa 
+al  hacer  clic  en  el  icono  con  la flecha  azul.  Podremos  de  igual 
+forma   disminuir  y   aumentar    los  tamaños    de  las  letras  con  el 
+icono A- y A+. 
+
+Finalmente,     desde    este   bloque,    podemos     ocultar   o   dejar 
+disponible    la barra   revisada   anteriormente     con  la  opción   de 
+desplegar, la cual  también permite ocultar la barra,  o dejarla fija 
+como viene por defecto. 
+
+                                                                   46 
+
+----------------------- Page 47-----------------------
+
+7. SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+Para  poder   revisar  el  avance   en  línea  del  grupo   de 
+estudiantes,  podemos  revisar  la opción  Calificaciones,  la 
+cual  se  encuentra  en  el  menú  del  costado  izquierdo,  lo 
+cual nos puede servir para enviar recordatorios y correos 
+de  seguimiento     para  estudiantes   con   atraso   en  sus 
+módulos. 
+
+Para  enviar  recordatorios    como   mensajes  internos,   se 
+debe hacer clic en el nombre del estudiante y luego en el 
+icono  de  mensaje,  que  tiene   una  nube  de  texto  y  dice 
+mensaje,    para  que    luego  el  estudiante   visualice   la 
+notificación en  el  icono de  mensaje en  la  parte superior 
+derecha, como se muestra en la imagen, es el mimo icono 
+para envío y visualización. 
+
+                                                    47 
+
+----------------------- Page 48-----------------------
+
+7. SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+ Para   garantizar  un  correcto  sistema   de  soporte,   se 
+ recomienda  configurar  en  primer  lugar,  foros principales 
+ donde   los  estudiantes  y el  tutor académico a  cargo de 
+ conducir  el  aprendizaje tengan  interacción  permanente, y 
+ se conserve el historial de dudas técnicas y académicas. 
+
+ También se pueden agregar foros dentro de cada módulo, 
+ para  segmentar   las consultas  según   los contenidos  de 
+ módulos y un foro de preguntas técnicas generales. 
+
+ Para  agregar  un  foro, se debe  seleccionar  el elemento, 
+ como   revisamos   en  la sección de  añadir  actividades  y 
+ recursos. 
+
+ Posteriormente,   bastará  con  hacer  clic en  “Añadir  un 
+ nuevo   tema   de debate”   para  que  tanto  tutores como 
+ estudiantes puedan agregar un nuevo tema. 
+
+                                                    48 
+
+----------------------- Page 49-----------------------
+
+7. SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+Dentro  de  cada   foro, podrá  identificar las preguntas, 
+quién  ha  realizado cada  una  de  ellas, la  fecha y hora 
+exacta  de  la  creación  de  los  temas,  el  número   de 
+respuestas que posee, y el último mensaje del tema. 
+
+Estos datos facilitan monitorear el nivel de interacción de 
+los  estudiantes,  ya   que   un  factor   importante   de 
+aprendizaje  es  la forma   en  que  se  logra  generar  la 
+interacción de conocimientos en diferentes niveles, de los 
+estudiantes de un mismo curso. 
+
+                                                 49 
+
+----------------------- Page 50-----------------------
+
+7. SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+Se podrá revisar la lista de los participantes, e identificar 
+los  roles  de  cada  uno  de  los  matriculados  en  un curso, 
+(estudiantes o tutores y cualquier otro rol adicional) para 
+asegurar   una   correcta   ejecución   y  soporte   para   los 
+participantes. 
+
+Esta  opción    es  recomendable,      para  revisar   si está 
+presente  la  totalidad  de  participantes  y  encargados  de 
+soporte y conducción de aprendizaje del curso. 
+
+Esta opción se encuentra dentro del curso, en el  bloque 
+de opciones del costado izquierdo, Participantes. 
+
+                                                     50 
+
+----------------------- Page 51-----------------------
+
+7. SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+Otra  opción  recomendada  de  realizar  seguimiento  a  los 
+estudiantes,  es  agregar  el  recurso  de  barra  de  progreso 
+dentro del curso, la cual se encuentra disponible para ser 
+incorporada dentro de  la lista de actividades y  recursos. 
+Esta   barra  permite    ver  el  estado   de   avance   de   los 
+participantes,  facilitando   el  monitoreo  por  parte  de  los 
+tutores académicos. 
+
+Cada segmento  indica  una actividad, y  se  diferencian en 
+virtud de los siguientes colores: 
+
+Verde : actividad completa. 
+Rojo: actividad reprobada 
+Azul : actividad sin visualizar. 
+
+IMPORTANTE: La barra de progreso considera dentro del 
+contenido a mostrar, todas  las actividades y  recursos que 
+cuentan    con    marca   de   finalización.   Las   actividades 
+complementarias,      que    no   deben      llevar  marca    de 
+finalización, no son consideradas en la barra. 
+
+                                                       51 
+
+----------------------- Page 52-----------------------
+
+7. SOPORTE Y SEGUIMIENTO DE LOS PARTICIPANTES 
+
+Con este recurso agregado, cada participante podrá revisar su 
+avance en tiempo real. 
+
+Esto  grafica  el avance   real  de  cada   participante,  según   el 
+consumo  de  recursos  y  actividades  y  estará  habilitado  si  es 
+que el ejecutor habilita la opción explicada anteriormente. 
+
+IMPORTANTE: 
+Esta  barra  de  información  permite  monitorear el  avance  del 
+participante   en  el  curso,  pero   no  refleja  el indicador   de 
+porcentaje de avance final al Plan Formativo. 
+
+                                                          52 
+
+----------------------- Page 53-----------------------
+
+8. SOPORTE A EJECUTORES 
+
+Para todos  los efectos  de soporte,  en  cuanto  a  dudas  de  uso del 
+sistema  y   problemas  con    la  carga de  contenidos,  formatos   de 
+recursos   o  actividades  a  usar,  se  debe   escribir  un  correo   a 
+adminelearning@sence.cl. 
+
+                                                               53 
+
+----------------------- Page 54-----------------------
+
+                    9. ANEXOS 
+TIPS PARA LA CONSTRUCCION DE MI CURSO. 
+
+                                                                                        54 
+
+----------------------- Page 55-----------------------
+
+8. ANEXO 
+
+A  continuación   se  detallan  los  procesos   más   importantes   a  la hora  de   poder 
+construir nuestro contenido online: 
+
+✓   Crea un mapa o guion instruccional, para poder revisar el viaje del participante a 
+    través del curso. 
+✓   Identifica el público objetivo y alinea los contenidos y  la comunicación a él, cada 
+    público debe tener un lenguaje. 
+✓   Genera    los canales   de  vínculo   correctos  para   los participantes   y  tutores, 
+    interactúa con el participante. 
+✓   Mantén el flujo del contenido, no redundando en los contenidos. 
+✓   El  diseño  es  fundamental,   para  el  contexto  de  aprendizaje, no  te olvides  del 
+    escenario. 
+✓   Mantén siempre las ideas fuerza de los contenidos presentes, destaca conceptos 
+    clave. 
+✓   Usa una línea gráfica única, crea un patrón para tus vídeos. 
+✓   Segmenta el contenido en microcápsulas, utiliza cortes rápidos en la edición. 
+✓   Que tu contenido multimedia sea dinámico, explora diferentes ángulos. 
+✓   Considera  los  diferentes  dispositivos  de  trabajo que  usan  los  participantes,  sé 
+    creativo. 
+
+                                                                                  55 
+
+----------------------- Page 56-----------------------
+
+8. ANEXO 
+
+8.1 Crea un mapa o Guion instruccional, para poder revisar el viaje del participante a 
+través del curso: 
+
+Recuerda    que,  actualmente  estamos  en  una  era  digital,  en  la  cual  todo  puede  ser 
+hecho en  la medida de  necesidades específicas, o el timing  del servicio. Por lo tanto, 
+tener  un mapa o guion  no es  inmovilizar tu  producto o  que sea  poco flexible.  Por el 
+contrario,  esa  herramienta    puede  ser  tu  principal  aliada en  el momento  de     crear 
+contenidos en línea, ya que será la carta de navegación de los contenidos y el viaje de 
+los participantes. 
+
+Tener esa planificación facilita la producción de los videos y contenidos multimedia. De 
+esta  forma  es  más fácil  avanzar  y  no generar  múltiples  ideas  en  cada  definición  de 
+aplicación de contenidos que generen demoras en la producción, así evitas la creación 
+de contenido ambiguo o que se vea poco consecuente con la línea metodológica. Con 
+un plan inicial, facilita identificar cuáles temas abordar y, principalmente, de cuál forma 
+trabajar cada uno de ellos, para lograr el mejor resultado. 
+
+                                                                                     56 
+
+----------------------- Page 57-----------------------
+
+8. ANEXO 
+
+8.2 Identifica el público objetivo y alinea los contenidos y la comunicación a él, cada 
+público, un lenguaje: 
+
+Busca siempre identificar y conocer tus interlocutores (participantes objetivos). Por más 
+que  el  contenido  repasado  sea  el  mismo,  no  se  puede  entregar  el  contenido  de  la 
+misma manera con adolescentes y empresarios. Investiga por lo menos la edad de los 
+participantes,  su  ocupación,  años   laborales,  etc.  Mientras  más  características  de  tu 
+audiencia   sepas,  mejor.  Ajustando   el  lenguaje  a  tu  público, vas  a  conseguir   una 
+conexión  más fuerte  con el  participante y  por consecuencia,  mejora la experiencia de 
+aprendizaje y se consigue una mayor participación y tasa de término. 
+
+8.3 Genera los canales de vínculo correctos para los participantes y tutores, interactúa 
+con el participante: 
+
+Mantén una imagen real, no se debe crear personajes para entregar el contenido que 
+se  alejen  de  lo  que  esperamos  transmitir,  independiente  del  asunto  abordado  en  el 
+curso. Sin embargo, por medio de la interacción es  posible crear un material en línea, 
+dinámico, sin perder la seriedad necesaria. Muestra que te preocupas por la enseñanza. 
+Crea canales de diálogo que estén abierto a preguntas, a través de foros, chat, destaca 
+las vías de contacto, correo electrónico, etc. 
+Haz que el alumno se olvide de que hay una pantalla entre él y el aprendizaje, que el 
+guion metodológico, se ejecute de forma natural con el contexto adecuado. 
+
+                                                                                   57 
+
+----------------------- Page 58-----------------------
+
+8. ANEXO 
+
+8.4 Manten el flujo del contenido, no redundando en los contenidos: 
+
+En esta etapa, es  bueno usar el Guion o  mapa de trabajo  metodológico.  Para que tu 
+vídeo  sea  dinámico,  es  importante cuidar  la  manera de  presentar  los contenidos  de 
+cada módulo. Hablar la misma temática de diez maneras diferentes no es interesante y 
+puede acabar confundiendo, además de cansar a los participantes y bajar el resultado 
+final de curso,  a nivel de finalización y satisfacción. 
+
+8.5  El  diseño  es  fundamental,   para  el  contexto  de  aprendizaje,  no  te  olvides  del 
+escenario: 
+
+El contexto gráfico es fundamental, si desarrollas videos, textos con gráficas o material 
+animado,  el  fondo   nunca  puede  llamar  más  atención  que  la  información  que  estás 
+transmitiendo. O sea, cuidado con ítems  en el escenario que quiten  la concentración 
+de  tu  participante,  o  te molesten  en    el momento     de  entregar   los contenidos.   Si 
+generas video clases, cuida la iluminación y elige lugares claros y  bien iluminados. De 
+esta  manera,  consigues  crear    material  online  más  interesante,  con   menos  ruido  y 
+eficaz. 
+
+                                                                                     58 
+
+----------------------- Page 59-----------------------
+
+8. ANEXO 
+
+8.6 Mantén siempre las ideas fuerza de los contenidos presentes, destaca conceptos 
+clave: 
+
+No te olvides de destacar los conceptos clave de cada clase de manera visual, ya sea 
+en material multimedia o impreso. Escribe las palabras clave del lado izquierdo de la 
+imagen,  pues  es  el  primer  lugar  que  el  alumno   mira.  También   puedes  hacerlo  de 
+manera manual al  utilizar  un  pizarrón,  por ejemplo, siempre  cuidando  la caligrafía y 
+ortografía, en el caso de video clases. Si prefieres añadir las palabras en la edición (de 
+material multimedia o de lectura), escoge una buena fuente (clara y legible) y cuida el 
+color para obtener el máximo efecto. 
+
+Consejo  importante:  no  importa  si  son  digitales  o  manuales,  las  palabras  necesitan 
+estar   visibles  en   cualquier   dispositivo   para   que    el  alumno     pueda    leerlas 
+perfectamente.  Sea    en  un  ordenador,  tablet   o  smartphone,    él necesita  conseguir 
+entender lo que está escrito, recuerda que hoy los computadores no son el dispositivo 
+principal  usado   por  los  alumnos,   son   los dispositivos   móviles,  por  este  motivo 
+recuerda adaptar tus  contenidos  para asegurar  la compatibilidad y visualización,  con 
+formatos HTML5, Videos, PDF, etc. 
+
+                                                                                     59 
+
+----------------------- Page 60-----------------------
+
+8. ANEXO 
+
+8.7 Usa una línea grafica única, crea un patrón para tus vídeos: 
+
+En el caso que los videos de los módulos no tengan la misma duración no hay problema desde el punto de 
+vista del  participante.  Sin embargo,   es importante   crear  cierto patrón   en tu  línea  gráfica y línea de 
+contenidos   dentro  del  curso  y en  cada  módulo,   pues   eso  hace  que  el participante  capte   mejor  los 
+contenidos  trasmitidos,  además  de  transmitir  profesionalidad  y  credibilidad.  La  estandarización  también 
+ayuda a crear una rutina de aprendizaje. 
+
+Reforzamos cuatro puntos que pueden ayudar con este punto: 
+
+✓    Usa siempre la misma viñeta o iconos. 
+✓   Ten siempre la misma estructura en tus cursos, número de módulos, contenidos, etc.). 
+✓   Sistematiza el lenguaje utilizado dentro de cada curso. 
+✓   Trabaja con maneras parecidas de edición dentro de cada módulo. 
+✓   Utiliza micro cápsulas  de contenido  dentro de tus  módulos, evita videos  de  larga duración o  material 
+    extenso. 
+
+8.8 Segmenta el contenido en microcápsulas, utiliza cortes rápidos en la edición. 
+
+Recordemos, no importa que el tema  sea  muy interesante,  nadie consigue  estar  mucho tiempo  viendo  a 
+otra persona hablar sin parar. Es aquí que entra la edición, a través de cortes rápidos y elementos visuales 
+(micro cápsulas de contenido). Al  hablar frente  a  la cámara,  busca frases  directas. Cambia el abordaje, sé 
+directo y preciso en la presentación del contenido, ya sea multimedia o escrito. 
+La pregunta clave al crear material en línea es: ¿qué tipo de vídeo me gustaría ver?                  60 
+
+----------------------- Page 61-----------------------
+
+8. ANEXO 
+
+8.9 Que tu contenido multimedia sea dinámico, explora diferentes ángulos. 
+
+Si  posees  más  de  una  cámara,  no  dudes  en  utilizarlas.  Ojo,  cuando  decimos  “cámara”, también 
+puedes    interpretarlo  como    cámara   de  celular.  Hoy,  los  smartphones     consiguen   captar   en  alta 
+definición. Posiciona los equipos en ángulos diferentes y  mira cómo eso facilitará al instante de la 
+edición   y  producción    de  los  contenidos   multimedia.    Eso   va  a  traer  para  tu  material   mayor 
+movimiento y flexibilidad. 
+Importante: grabar con dos cámaras puede generar lentitud en tu proceso de edición, dependiendo 
+de la potencia del equipo de edición (Notebook o  computador) 
+Si quieres ahorrar tiempo al editar se puede aproximar y alejar la imagen para dar más dinamismo 
+para  tu  video   clase,  en  el momento      de  la grabación.    Es simple   de   hacer  y  el resultado   es 
+satisfactorio. 
+
+8.10 Considera los diferentes dispositivos de trabajo que usan los participantes, sé creativo: 
+
+En  la  etapa   final, ya  reconociendo     los  elementos    claves,  cortes   rápidos  (micro   capsulas   de 
+contenidos), el lenguaje adecuado y la preparación del material a usar en grabaciones, actividades y 
+textos, potencia la metodología y entrega de contenidos a través de distintos elementos. Internet te 
+ofrece miles de recursos, ¡no dudes en usarlos! 
+ Explora ítems    multimedia  y   usa  elementos  audiovisuales.  El  cielo  es  el  límite,  busca  diferentes 
+metodologías que puedan auxiliarte a crear material online para tus cursos. Y lo más importante: 
+Utiliza  un  mapa  inicial  o  guion,  para tener  una guía  de  trabajo  y  mantener  el  foco,  tanto  en  lo 
+metodológico, el diseño y la ejecución, para entregar le mejor resultado a los participantes. 
+
+                                                                                                     61 
+
+----------------------- Page 62-----------------------
+
+MANUAL 
+
+PARA EJECUTORES 
+
+Aula Digital – Cursos E-learning 
+
+                                                                         62 

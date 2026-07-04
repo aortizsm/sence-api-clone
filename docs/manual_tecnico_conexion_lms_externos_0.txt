@@ -1,0 +1,229 @@
+                               Requerimientos Técnicos
+
+
+
+
+  Manual de Requerimientos
+          Técnicos
+     Plataforma E-Learning
+   LMS (Learning Management System)
+MEDICIÓN DE INDICADORES PARA CURSOS
+             E-LEARNING.
+
+
+
+
+                   1
+                                                                                                       Requerimientos Técnicos
+
+
+
+
+Contenido
+1. Introducción .................................................................................................................................... 3
+2. Funcionamiento .............................................................................................................................. 3
+3. Informe de Errores .......................................................................................................................... 6
+4. Especificaciones Técnicas................................................................................................................. 6
+
+
+
+
+                                                                         2
+                                                                       Requerimientos Técnicos
+
+
+
+
+1. Introducción
+Este documento describe la forma en que el gestor intermedio, el cual gestionará los datos extraídos
+desde Aula Digital y los diferentes LMS de cada ejecutor (Moodle/Blackboard u Otro), registrará el
+estado de avance de los cursos E-Learning. Este estado de avance se registra a partir de los siguientes
+indicadores:
+
+       Evaluación
+       Porcentaje de avance
+       Tiempo de conectividad
+
+2. Funcionamiento
+Un curso, en los diferentes sistemas LMS conectados al gestor, debe estar formado por módulos,
+actividades y evaluaciones, independiente el tipo de LMS, se considera la estructura base de un curso:
+
+
+
+
+El sistema intermedio (S/I) será la única herramienta, vía procedimientos automáticos conectados a
+la base de datos del sistema LMS del oferente, para extraer los datos de cada LMS (solo lectura).
+
+                                                  3
+                                                                     Requerimientos Técnicos
+
+
+
+
+DIAGRAMA DE CONEXIÓN SISTEMA INTERMEDIO:
+
+
+
+
+La información a enviar debe corresponder a la lista de módulos que ejecuta cada participante, por
+curso. La información que se obtendrá desde Aula Digital u otros LMS externos conectados será:
+
+
+Campo                           Descripción
+TOKEN OTEC                      Token identificador del OTEC provisto por SENCE.
+RUT OTEC                        Rut del OTEC.
+CODIGO CURSO                    Código identificador del curso obtenido de SIC.
+RUT ALUMNO                      Rut del alumno.
+TIEMPO DE CONECTIVIDAD          Tiempo de conectividad al curso (segundos).
+PORCENTAJE AVANCE               Porcentaje de avance del alumno al curso.
+FECHA INICIO CURSO              Fecha y hora de inicio de curso.
+FECHA FIN CURSO                 Fecha y hora de fin de curso.
+CODIGO MÓDULO                   Código identificador de módulo.
+CODIGO ACTIVIDAD                Código identificador de actividad, nombre.
+
+
+
+
+                                                  4
+                                                                        Requerimientos Técnicos
+
+
+
+
+Token OTEC:
+Token del OTEC provisto por el sistema RCE, el cual debe estar registrado dentro del sistema LMS del
+ejecutor y su proceso de obtención esta detallado en Manual adjunto al final del documento.
+
+RUT OTEC:
+Este campo debe estar registrado dentro del sistema LMS del ejecutor.
+
+Código Oferta Cuso:
+Los códigos identificadores que se utilizarán para vincular las ofertas, grupos, módulos y actividades
+entre el LMS de los ejecutores, se obtiene del resultado de cursos adjudicados entregados luego de
+la adjudicación de las diferentes licitaciones.
+
+RUT Alumno:
+El RUT de cada participante, debe estar registrado como campo identificador dentro del LMS de
+Ejecutor.
+
+Tiempo de Conectividad:
+Corresponde al tiempo en segundos que el alumno haya estado conectado ya sea al módulo o al
+curso en general.
+
+Porcentaje de avance:
+El porcentaje de avance del curso y del módulo. 13.5 se aproximará a 14, mientras que 13.49 será
+13. Este porcentaje es el porcentaje de consumo de actividades por parte del participante.
+
+Fecha inicio y Fecha fin:
+Indica la fecha y hora en que el alumno comienza y finaliza un módulo o curso.
+
+Código Módulo:
+Los códigos identificadores que se utilizarán para vincular las ofertas, grupos, módulos y actividades
+entre el LMS de los oferentes, el gestor intermedio y los sistemas SENCE, se obtienen del resultado
+de cursos adjudicados entregados luego de la adjudicación de las diferentes licitaciones.
+
+Nombre Actividad:
+Los nombres identificaran cada actividad (nombres indicados por cada ejecutor, según su diseño
+instruccional), los cuales no deben tener ningún formato en específico.
+
+
+
+
+                                                  5
+                                                                        Requerimientos Técnicos
+
+
+
+ 3. Informe de Errores
+
+ En caso se presenten errores detectados de forma automática, en la configuración de los cursos, se
+ informará oportunamente vía correo electrónico al diseñador encargado del curso, y representante
+ de la institución, los valores o configuraciones a corregir, para asegurar que la información obtenida
+ no genere problema o perdida de avances, como por ejemplo datos del cursos o participante.
+
+
+
+ 4. Especificaciones Técnicas
+
+Datos de conexión necesarios para conexión de procedimiento en LMS externo:
+
+Para generar la conexión del gestor intermedio con un LMS Externo, se necesita un acceso con un
+usuario y clave con permiso de lectura de la base de datos del LMS, exclusivamente, no es necesario
+la conexión a la base de dato general del oferente dueño del LMS, además se debe generar la
+disponibilidad del puerto de comunicación de MySql 3306, de forma remota, para generar la
+extracción de datos. Esto para el caso de sistemas Moodle.
+
+Se usaran campos orgánicos, como campos compuestos en el proceso de lectura desde la base de
+datos del LMS Moodle:
+
+ Tabla moodle                                    Campo moodle        Campo Salida
+ mdl_cohort                                      idnumber            rut_otec
+ mdl_cohort                                      idnumber            dv_otec
+ mdl_course                                      shortname           oferta_cod
+ mdl_groups                                      name                seccion_cod
+ mdl_user                                        idnumber            rut_alumno
+ mdl_user                                        idnumber            dv_alumno
+ Tiempo de conexión total en Moodle.             Formula             tiempo_conectividad
+
+ Tiempo de conexión total en Moodle vs           Formula             porcentaje_avance
+ tiempo duración total del de los módulos.
+
+ mdl_course                                      startdate           fecha_inicio
+ mdl_course                                      enddate             fecha_fin
+ mdl_course_sections                             name                mod_cod
+ Tiempo de conexión al módulo.                   Formula             mod_tiempo_conectividad
+ Si el participante completo las actividades     Formula             mod_estado
+ del módulo, se obtiene la nota, si la nota es
+ mayor o igual a 4 es aprobado, sin es
+ inferiores reprobado, sino no ha
+ completado las actividades o no tiene nota
+ es cursando.
+
+
+
+                                                  6
+                                                                          Requerimientos Técnicos
+
+
+
+ Total actividades del módulo vs Actividades       Formula              mod_porcentaje_avance
+ realizadas del módulo.
+
+ Primer Click en el módulo.                        Formula              mod_fecha_inicio
+ Último Click en el módulo.                        Formula              mod_fecha_fin
+ Dependiendo del tipo de actividad se extrae       name                 act_cod
+ el nombre de la tabla correspondiente:
+ mdl_scorm,
+ mdl_resource,
+ mdl_url,
+ mdl_feedback,
+ mdl_label,
+ mdl_bigbluebuttonbn,
+ mdl_forum,
+ mdl_grade_items
+ etc.
+
+
+
+
+Para el caso de sistemas LMS diferentes a Moodle, se deberán considerar los accesos a la base de datos
+en uso del LMS y evaluar la apertura del puerto necesario de conexión según la configuración usada
+por el ejecutor, de igual forma se debe dejar disponible y conceder permisos para el acceso remoto.
+
+Además, el ejecutor debe indicar los nombres de los campos que contengan los datos detallados en la
+tabla anterior, según correspondan a su sistema LMS y su estructura de base de datos (nombre de
+tablas), es decir, deberá homologar los nombres de los campos y tablas de la base de su LMS propio,
+equivalentes a los datos en lista, necesarios para ejecutar el proceso de lectura.
+
+Como requisito obligatorio para poder ejecutar el proceso de lectura de datos descrito anteriormente,
+dentro del sistema LMS de cada ejecutor (OTEC), deberá tener incorporado el módulo de registro de
+asistencia SENCE, para garantizar la seguridad e identificación de cada institución, participante y curso,
+con el objetivo de autenticar los datos de registro e ingreso. La información de cómo realizar esta
+conexión se encuentra publicada en el Manual Técnico de Integración Registro de Asistencia SENCE
+que se envía en conjunto con este documento.
+
+
+
+
+                                                    7
+

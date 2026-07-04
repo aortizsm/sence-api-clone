@@ -1,0 +1,60 @@
+﻿----------------------- Page 1-----------------------
+
+Estructura de pruebas para integración 
+
+La estructura que se debe enviar es la siguiente: 
+
+        { 
+           "rutOtec" : "Rut OTEC producción", 
+           "idSistema" : 1350, 
+           "token" : "Token OTEC produción", 
+           "codigoOferta": "CAP-15-01-13-0446", 
+           "codigoGrupo": "CAP-15-01-13-0446", 
+           "codigoEnvio": "00001", 
+           "listaAlumnos": [ 
+              { 
+                   "rutAlumno": "9445435", 
+                   "dvAlumno": "2", 
+                   "tiempoConectividad": 0, 
+                   "porcentajeAvance": 0, 
+                   "estado": 1, 
+                   "fechaInicio": "2021-04-01 00:00:00", 
+                   "fechaFin": "2021-12-31 00:00:00", 
+                   "listaModulos": [ 
+                       { 
+                           "codigoModulo": "C46982-O565656565-M1", 
+                           "tiempoConectividad": 0, 
+                           "porcentajeAvance": 0, 
+                           "estado": 1, 
+                           "fechaInicio": "2021-04-01", 
+                           "fechaFin": "2021-12-31", 
+                           "listaActividades": [ 
+                               { "codigoActividad": "Tarea de prueba" } 
+                           ] 
+                       } 
+                   ] 
+               } 
+              
+           ] 
+           
+        } 
+
+Consideraciones: 
+
+       El rut y el token debe ser el que ya utiliza la OTEC, no se debe usar credenciales especiales 
+       Esto es sobre ambiente productivo (https://auladigital.sence.cl/gestor/API/avance-sic/enviarAvance) utilizando un curso de prueba (CAP-15- 
+       01-13-0446) y el módulo de prueba (C46982-O565656565-M1) 
+       La fecha de término del curso es 2021-12-31 
+       El % de avance y el tiempo de conectividad se deben mantener en 0 
+       La lista de actividades puede contener cualquier texto 
+       La lista de alumnos existentes en el curso son: 
+
+ Rut                                                     Nombre 
+
+ 9.445.435-2                                            GUSTAVO RAMÓN JARA ORTIZ 
+
+ 10.312.870-6                                            HILDA MAGDALENA BEZERRA SAAVEDRA 
+
+----------------------- Page 2-----------------------
+
+10.176.851-1                                           MARIBEL IRENE OLGUÍN CONTRERAS 

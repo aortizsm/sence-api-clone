@@ -1,0 +1,667 @@
+Integración Registro Asistencia SENCE
+Manual Técnico
+v1.1.6
+
+
+
+
+                                        1
+Tabla de Contenido
+1     Introducción ...............................................................................................................................3
+2     ¿Cómo Funciona? .......................................................................................................................3
+3     ¿Cómo me Integro? ....................................................................................................................8
+    3.1      Paso 1: Obtención de Token ...............................................................................................8
+    3.2      Paso 2: Integración de Inicio de Sesión ..............................................................................8
+    3.3      Paso 3: Integración de Cierre de Sesión ...........................................................................11
+4     ¿Cómo Pruebo? ........................................................................................................................13
+5     ¿Cómo Paso a Producción? ......................................................................................................14
+6     Anexo 1: Tabla URL’s ................................................................................................................15
+7     Anexo 2: Tabla Errores .............................................................................................................16
+8     Anexo 3: Ejemplos ....................................................................................................................17
+    8.1      Formulario POST Inicio de Sesión .....................................................................................17
+    8.2      Formulario POST Cierre de Sesión ....................................................................................17
+    8.3      Página Retoma .................................................................................................................18
+    8.4      Página Error ......................................................................................................................18
+9     Anexo 4: Franquicia Tributaria .................................................................................................19
+
+
+
+
+                                                                                                                                                 2
+1 Introducción
+El presente documento describe los pasos necesarios para la integración de las plataformas E-
+Learning OTEC con el registro de asistencia SENCE.
+
+Este documento ha sido elaborado con el objetivo de entregar los lineamientos técnicos del nuevo
+proceso de registro de asistencia E-Learning a todas las Entidades Capacitadoras que cuenten con
+plataformas de capacitación E-Learning y entreguen cursos con código SENCE. Se explicará el
+funcionamiento general de este proceso detallando los cambios que se deberán realizar y se
+describirán los pasos a seguir tanto para la integración con las nuevas plataformas de SENCE como
+para realizar las pruebas respectivas en cada una de las plataformas de las Entidades
+Capacitadoras.
+
+
+
+
+2 ¿Cómo Funciona?
+El nuevo proceso de registro de asistencia E-Learning consiste en la separación del inicio y cierre
+de sesión de la selección y ejecución del curso en la plataforma OTEC, realizando la gestión de
+sesiones en la plataforma SENCE y la ejecución del curso en la plataforma OTEC. El nuevo proceso
+considera los siguientes pasos:
+
+
+
+       Paso 1: Selección del curso
+
+       El participante ingresa a la plataforma OTEC y selecciona el curso a realizar.
+
+
+
+
+                                                                                                 3
+Paso 2: Inicio de sesión
+
+La plataforma OTEC redirecciona el navegador del participante a la página para inicio de
+sesión de SENCE, indicando el id de acción y las páginas de retorno en caso de éxito y
+fracaso, entre otros.
+
+
+
+
+En el login, el participante ingresará su RUT y Clave Única, para que el SENCE registre el
+inicio de la sesión. Si el inicio de sesión es correcto, la plataforma SENCE redirecciona el
+navegador del participante a la página de éxito de la plataforma OTEC, en caso contrario,
+lo redirecciona a la página de fracaso de la plataforma OTEC.
+
+
+
+
+                                                                                          4
+Paso 3: Ejecución del curso
+
+La plataforma OTEC recibe la confirmación de éxito del inicio de sesión y comienza la
+ejecución del curso, y en caso contrario recibe el mensaje de fracaso en el inicio de sesión,
+cancelando la ejecución del curso.
+
+
+
+
+Recomendaciones:
+
+a) Se recomienda incorporar un cronómetro en pantalla para que el participante pueda
+   en todo momento ver el tiempo restante de su sesión actual en el curso.
+b) También se recomienda incorporar una alerta cuando queden 10 minutos para el
+   término del tiempo de ejecución asignado al curso, para que el participante recuerde
+   cerrar su sesión dentro de los plazos establecidos para el curso.
+
+
+
+Paso 4: Cierre de sesión
+
+La plataforma OTEC redirecciona el navegador del participante al login para cierre de
+sesión del SENCE, indicando el código del curso, el identificador de la sesión que se quiere
+cerrar, y las páginas de retorno en caso de éxito y fracaso en la operación de cierre de
+sesión, entre otros.
+
+
+
+
+                                                                                           5
+En la plataforma de Login , el participante ingresará su RUT y Clave Única, para que el
+SENCE registre el cierre de la sesión. Si el cierre de sesión es correcto, la plataforma SENCE
+redirecciona el navegador del participante a la página de éxito del OTEC, en caso contrario,
+lo redirecciona a la página de fracaso de la plataforma OTEC.
+
+
+
+
+Paso 5: Fin del curso
+
+La plataforma OTEC recibe la confirmación de éxito del cierre de sesión y confirma la
+finalización del curso al participante, o recibe el mensaje de fracaso en el cierre de sesión,
+mostrando el mensaje correspondiente.
+
+
+
+
+                                                                                            6
+Si el participante no ingresa correctamente su Clave Única, la plataforma no
+retornara parámetros de éxito ni parámetros de fracaso, ya que mantendrá al
+alumno en el login de clave única, hasta que este logre ingresar sus credenciales.
+Si el alumno olvida sus credenciales, dentro del login tendrá disponible un link
+para poder recuperarla.
+
+
+
+
+                                                                                     7
+3 ¿Cómo me Integro?
+El proceso de integración con el sistema de Registro de Asistencia del SENCE considera los
+siguientes pasos:
+
+
+
+
+3.1 Paso 1: Obtención de Token
+El OTEC debe ingresar al sistema emisor de Token del SENCE mediante un navegador web, en la
+dirección https://sistemas.sence.cl/rts, identificándose con su RUT Empresa, RUT representante
+legal válido con el Servicio de Impuestos Internos, y Clave SENCE (CS) de empresa.
+
+El sistema emisor de Token permite al OTEC generar cuantos Token estime conveniente, y le
+permite además dar de baja cualquiera de ellos en cualquier instante. Cualquiera de estos Token,
+que se encuentre en estado vigente, puede ser utilizado para identificar al OTEC en el inicio y
+cierre de sesión.
+
+
+
+
+       Incluir un Token vigente en los POST de inicio y cierre de sesión es obligatorio. La
+      administración de los Token es de exclusiva responsabilidad del OTEC que los emite.
+
+
+
+
+3.2 Paso 2: Integración de Inicio de Sesión
+En la plataforma OTEC, específicamente en la página del curso, se debe incorporar un botón para
+el inicio de la sesión del curso. Este botón debe redireccionar a la URL
+
+https://sistemas.sence.cl/rce/Registro/IniciarSesion
+
+enviando los siguientes parámetros vía POST:
+
+    Parámetro         Tipo      Largo                         Descripción
+ RutOtec             Texto     10        RUT OTEC sin puntos y con digito verificador, en formato
+                                         xxxxxxxx-x.
+ Token               Texto     36        Token del OTEC.
+ CodSence            Texto     10        Código SENCE del curso.
+
+
+
+                                                                                                    8
+ CodigoCurso         Texto    50        Identificador del curso, (mínimo 7 caracteres, excepto
+                                        cursos FPT).
+ LineaCapacitacion   Entero             Identificador de la línea de capacitación.
+                                        1 = Programas Sociales
+                                        3 = Franquicia Tributaria.
+                                        6 = FPT
+ RunAlumno           Texto    10        RUN Participante, sin puntos y con digito verificador, en
+                                        formato xxxxxxxx-x.
+ IdSesionAlumno      Texto    149       Identificador sesión plataforma OTEC.
+ UrlRetoma           Texto    100       Url para redireccionar en caso de inicio de sesión
+                                        exitoso.
+ UrlError            Texto    100       Url para redireccionar en caso de inicio de sesión
+                                        incorrecto.
+
+
+
+        El envío de estos parámetros, siguiendo las especificaciones, es requisito para la
+                             correcta operación del Inicio de Sesión.
+
+
+
+
+En caso de inicio de sesión exitoso, el sistema SENCE redireccionará a la URL de inicio de sesión
+exitoso del OTEC, enviando los siguientes parámetros vía POST:
+
+    Parámetro         Tipo     Largo                            Descripción
+ CodSence            Texto    10        Código SENCE del curso.
+ CodigoCurso         Texto    50        Identificador del curso, (mínimo 7 caracteres, excepto
+                                        cursos FPT).
+ IdSesionAlumno      Texto    149       Identificador sesión plataforma OTEC.
+ IdSesionSence       Texto    149       Identificador sesión SENCE. Este identificador debe ser
+                                        enviado en el cierre de sesión, para poder asociar
+                                        correctamente el inicio con el cierre de la sesión.
+ RunAlumno           Texto    10        RUT Participante, sin puntos y con digito verificador, en
+                                        formato xxxxxxxx-x.
+ FechaHora           Texto    19        Fecha y hora del inicio de sesión, en formato aaaa-mm-
+                                        dd hh:mm:ss.
+ ZonaHoraria         Texto    100       Zona horaria del inicio de sesión.
+ LineaCapacitacion   Entero             Identificador de la línea de capacitación.
+                                        1 = Programas Sociales
+                                        3 = Franquicia Tributaria.
+                                        6 = FPT
+
+
+                                                                                                    9
+En caso de inicio de sesión incorrecto, el sistema SENCE redireccionará a la URL de inicio de sesión
+incorrecto del OTEC, enviando los siguientes parámetros vía POST:
+
+    Parámetro          Tipo     Largo                            Descripción
+ CodSence             Texto    10        Código SENCE del curso.
+ CodigoCurso          Texto    50        Identificador del curso, (mínimo 7 caracteres, excepto
+                                         cursos FPT).
+ IdSesionAlumno       Texto    149       Identificador sesión plataforma OTEC.
+ IdSesionSence        Texto    149       Identificador sesión SENCE.
+ RunAlumno            Texto    10        RUT Participante, sin puntos y con digito verificador, en
+                                         formato xxxxxxxx-x.
+ FechaHora            Texto    19        Fecha y hora del inicio de sesión, en formato aaaa-mm-
+                                         dd hh:mm:ss.
+ ZonaHoraria          Texto    100       Zona horaria del inicio de sesión.
+ LineaCapacitacion    Entero             Identificador de la línea de capacitación.
+                                         1 = Programas Sociales
+                                         3 = Franquicia Tributaria.
+                                         6 = FPT
+ GlosaError           Entero             Identificador del error, ver Anexo 2: Tabla Errores.
+
+
+Es importante que la plataforma OTEC interprete el error informado por la plataforma SENCE, y
+muestre un mensaje adecuado al participante, para que le permita realizar las acciones
+correspondientes.
+
+Se recomienda incluir, junto con el botón para el inicio de sesión del curso, instrucciones para el
+alumno acerca del inicio de sesión, indicando que se utilizará la Clave Única e incluyendo el
+siguiente link:
+
+
+       Portal            ciudadano
+       ClaveÚnica)                       https://claveunica.gob.cl/
+
+
+
+
+                                                                                                     10
+3.3 Paso 3: Integración de Cierre de Sesión
+En la plataforma OTEC, en la página del curso, se debe incorporar un botón para el cierre de la
+sesión del curso. Este botón debe redireccionar a la URL
+
+https://sistemas.sence.cl/rce/Registro/CerrarSesion
+
+enviando los siguientes parámetros vía POST:
+
+    Parámetro         Tipo     Largo                            Descripción
+ RutOtec             Texto    10        RUT OTEC sin puntos y con digito verificador, en formato
+                                        xxxxxxxx-x.
+ Token               Texto    36        Token del OTEC.
+ CodSence            Texto    10        Código SENCE del curso.
+ CodigoCurso         Texto    50        Identificador del curso, (mínimo 7 caracteres, excepto
+                                        cursos FPT).
+ LineaCapacitacion   Entero             Identificador de la línea de capacitación.
+                                        1 = Programas Sociales
+                                        3 = Franquicia Tributaria.
+                                        6 = FPT
+ RunAlumno           Texto    10        RUN Participante, sin puntos y con digito verificador, en
+                                        formato xxxxxxxx-x.
+ IdSesionAlumno      Texto    149       Identificador de sesión en la plataforma OTEC.
+ IdSesionSence       Texto    149       Identificador de sesión SENCE. Debe ser el mismo
+                                        identificador entregado por el SENCE en la respuesta a
+                                        al inicio de sesión exitoso.
+ UrlRetoma           Texto    100       Url para redireccionar en caso de inicio de sesión
+                                        exitoso.
+ UrlError            Texto    100       Url para redireccionar en caso de inicio de sesión
+                                        incorrecto.
+
+
+
+        El envío de estos parámetros, siguiendo las especificaciones, es requisito para la
+                            correcta operación del Cierre de Sesión.
+
+
+
+
+                                                                                               11
+En caso de cierre de sesión exitoso, el sistema SENCE redireccionará a la URL de cierre de sesión
+exitoso del OTEC, enviando los siguientes parámetros vía POST:
+
+    Parámetro          Tipo     Largo                            Descripción
+ CodSence             Texto    10        Código SENCE del curso.
+ CodigoCurso          Texto    50        Identificador del curso, (mínimo 7 caracteres, excepto
+                                         cursos FPT).
+ IdSesionAlumno       Texto    149       Identificador de sesión en la plataforma OTEC.
+ RunAlumno            Texto    10        RUT Participante, sin puntos y con digito verificador, en
+                                         formato xxxxxxxx-x.
+ FechaHora            Texto    19        Fecha y hora del inicio de sesión, en formato aaaa-mm-
+                                         dd hh:mm:ss.
+ ZonaHoraria          Texto    100       Zona horaria del cierre de sesión
+ LineaCapacitacion    Entero             Identificador de la línea de capacitación.
+                                         1 = Programas Sociales
+                                         3 = Franquicia Tributaria.
+                                         6 = FPT
+
+
+En caso de cierre de sesión incorrecto, el sistema SENCE redireccionará a la URL de cierre de sesión
+incorrecto del OTEC, enviando los siguientes parámetros vía POST:
+
+    Parámetro          Tipo     Largo                            Descripción
+ CodSence             Texto    10        Código SENCE del curso.
+ CodigoCurso          Texto    50        Identificador del curso, (mínimo 7 caracteres, excepto
+                                         cursos FPT).
+ IdSesionAlumno       Texto    149       Identificador sesión plataforma OTEC.
+ RunAlumno            Texto    10        RUT Participante, sin puntos y con digito verificador, en
+                                         formato xxxxxxxx-x.
+ FechaHora            Texto    19        Fecha y hora del inicio de sesión, en formato aaaa-mm-
+                                         dd hh:mm:ss.
+ ZonaHoraria          Texto    100       Zona horaria del cierre de sesión.
+ LineaCapacitacion    Entero             Identificador de la línea de capacitación.
+                                         1 = Programas Sociales
+                                         3 = Franquicia Tributaria.
+                                         6 = FPT
+ GlosaError           Entero             Identificador del error, ver Anexo 2: Tabla Errores.
+
+
+Es importante que la plataforma OTEC interprete el error informado por la plataforma SENCE, y
+muestre un mensaje adecuado al participante, para que le permita realizar las acciones
+correspondientes.
+
+
+
+                                                                                                     12
+4 ¿Cómo Pruebo?
+Para realizar pruebas durante el proceso de integración, deberá generar su Token, el cual podrá
+utilizarlo tanto para esta etapa de pruebas como para el ambiente productivo. La obtención del
+Token puede realizarla en la siguiente URL:
+
+https://sistemas.sence.cl/rts
+
+Una vez realizados los pasos de integración en su plataforma, podrá utilizar las siguientes URL’s en
+Ambiente Test para probar el envío de parámetros y recepción de respuesta, sin registrar
+información en los sistemas productivos:
+
+
+
+https://sistemas.sence.cl/rcetest/Registro/IniciarSesion
+
+https://sistemas.sence.cl/rcetest/Registro/CerrarSesion
+
+
+
+
+En caso de que no cuente con un código SENCE E-Learning vigente o código de curso E-Learning
+vigente, en los campos CodSence y CodigoCurso puede utilizar el valor -1, lo cual deshabilitará
+las verificaciones asociadas a esos códigos. Esto se podrá hacer sólo en el Ambiente Test.
+
+
+
+
+                                                                                                  13
+5 ¿Cómo Paso a Producción?
+Para habilitar el proceso en ambientes productivos y comenzar la operación, se deberán remplazar
+las URL’s utilizada en el Ambiente Test por las URL’s requeridas para el Ambiente Producción. Al
+utilizar las URL’s del Ambiente Producción, se registrarán inicios y cierres de sesión en las bases de
+datos productivas del SENCE, información que será utilizada para todos los procesos
+administrativos asociados a ese curso E-Learning. Esta información no podrá ser eliminada. Las
+URL del Ambiente Producción son las siguientes:
+
+
+
+https://sistemas.sence.cl/rce/Registro/IniciarSesion
+
+https://sistemas.sence.cl/rce/Registro/CerrarSesion
+
+
+
+
+                                                                                                   14
+6 Anexo 1: Tabla URL’s
+
+
+
+
+                              Ambiente Test
+
+
+     Inicio Sesión   https://sistemas.sence.cl/rcetest/Registro/IniciarSesion
+
+
+     Cierre Sesión   https://sistemas.sence.cl/rcetest/Registro/CerrarSesion
+
+
+
+
+                          Ambiente Producción
+
+
+     Inicio Sesión    https://sistemas.sence.cl/rce/Registro/IniciarSesion
+
+
+     Cierre Sesión    https://sistemas.sence.cl/rce/Registro/CerrarSesion
+
+
+
+
+                                                                                15
+7 Anexo 2: Tabla Errores
+ Id                                           Descripción
+200   El POST tiene uno o más parámetros mandatorios sin información. Esto también ocurre
+      cuando un parámetro está mal escrito (por ejemplo, RutAlumno en lugar de
+      RunAlumno), o cuando se ingresan sólo espacios en blanco en un parámetro obligatorio.
+201   La URL de Retoma y/o URL de Error no tienen información. Ambos parámetros son
+      obligatorios en todos los POST.
+202   La URL de Retoma tiene formato incorrecto.
+203   La URL de Error tiene formato incorrecto.
+204   El Código SENCE tiene menos de 10 caracteres y/o no es código válido.
+205   El Código Curso tiene menos de 7 caracteres y/o no es código válido.
+206   La línea de capacitación es incorrecta.
+207   El Run Alumno tiene formato incorrecto, o tiene el dígito verificador incorrecto.
+208   El Run Alumno no está autorizado para realizar el curso.
+209   El Rut OTEC tiene formato incorrecto, o tiene el dígito verificador incorrecto.
+211   El Token no pertenece al OTEC.
+212   El Token no está vigente.
+300   Error interno no clasificado, se debe reportar al SENCE con la mayor cantidad de
+      antecedentes disponibles.
+301   No se pudo registrar el ingreso o cierre de sesión. Esto ocurre cuando la Línea de
+      Capacitación es incorrecta, o el Código de Curso es incorrecto.
+302   No se pudo validar la información del Organismo, se debe reportar al SENCE con la
+      mayor cantidad de antecedentes disponibles.
+303   El Token no existe, o su formato es incorrecto.
+304   No se pudieron verificar los datos enviados, se debe reportar al SENCE con la mayor
+      cantidad de antecedentes disponibles (ej. enviar parámetros de inicio o cierre de
+      sesión según corresponda)
+305   No se pudo registrar la información, se debe reportar al SENCE con la mayor cantidad de
+      antecedentes disponibles. (ej. enviar parámetros de inicio o cierre de
+      sesión según corresponda)
+306   El Código Curso no corresponde al código SENCE.
+307   El Código Curso no tiene modalidad E-learning.
+308   El Código Curso no corresponde al RUT OTEC
+309   Las fechas de ejecución comunicadas para el Código Curso no corresponden a la fecha
+      actual.
+310   El Código Curso está en estado Terminado o Anulado.
+
+311   Run ingresado en el Login de Clave Única no corresponde con Run alumno informado
+      por el ejecutor.
+312   No se pudo completar la autenticación con Clave Única.
+
+
+
+                                                                                                16
+    313    URL de Cierre de sesión Incorrecta.
+
+
+
+
+   8 Anexo 3: Ejemplos
+   A continuación, se muestra un ejemplo simple en ASP del inicio y cierre de sesión, y de las páginas
+   de retoma y error.
+
+
+   8.1 Formulario POST Inicio de Sesión
+   El ejemplo muestra en pantalla un formulario con los parámetros requeridos para el inicio de
+   sesión en el Ambiente Test, incluyendo URL’s de retoma y error apuntando al equipo local:
+
+<header>
+</header>
+<body>
+<b>Iniciar</b><br>
+  <form name = "formPost" method="post" action="https://sistemas.sence.cl/rcetest/Registro/IniciarSesion" />
+    <label>RutOtec</label><input type="text" name="RutOtec" value="12345678-9" /></br>
+    <label>Token</label><input type="text" name="Token" value="12345678-1234-1234-1234-123456789" /></br>
+    <label>CodSence</label><input type="text" name="CodSence" value="1234567890" /></br>
+    <label>CodigoCurso</label><input type="text" name="CodigoCurso" value="1234567" /></br>
+    <label>LineaCapacitacion</label><input type="text" name="LineaCapacitacion" value="3" /></br>
+    <label>RunAlumno</label><input type="text" name="RunAlumno" value="12345678-9" /></br>
+    <label>IdSesionAlumno</label><input type="text" name="IdSesionAlumno" value="123456789" /></br>
+    <label>UrlRetoma</label><input type="text" name="UrlRetoma" value="http://localhost/exito.asp" /></br>
+    <label>UrlError</label><input type="text" name="UrlError" value="http://localhost/fracaso.asp" /></br>
+    <input type="submit" />
+  </form>
+</body>
+
+
+
+
+   8.2 Formulario POST Cierre de Sesión
+   El ejemplo muestra en pantalla un formulario con los parámetros requeridos para el cierre de
+   sesión en el Ambiente Test, incluyendo URL’s de retoma y error apuntando al equipo local:
+
+<header>
+</header>
+<body>
+<b>Cerrar</b><br>
+  <form name = "formPost" method="post" action="https://sistemas.sence.cl/rcetest/Registro/CerrarSesion" />
+    <label>RutOtec</label><input type="text" name="RutOtec" value="12345678-9" /></br>
+    <label>Token</label><input type="text" name="Token" value="12345678-1234-1234-1234-123456789" /></br>
+    <label>CodigoSence</label><input type="text" name="CodSence" value="1234567890" /></br>
+    <label>CodigoCurso</label><input type="text" name="CodigoCurso" value="1234567" /></br>
+    <label>LineaCapacitacion</label><input type="text" name="LineaCapacitacion" value="3" /></br>
+    <label>RunAlumno</label><input type="text" name="RunAlumno" value="12345678-9" /></br>
+    <label>IdSesionAlumno</label><input type="text" name="IdSesionAlumno" value="123456789" /></br>
+    <label>IdSesionSence</label><input type="text" name="IdSesionSence" value="987654321" /></br>
+    <label>UrlRetoma</label><input type="text" name="UrlRetoma" value="http://localhost/exito.asp" /></br>
+
+
+                                                                                                     17
+    <label>UrlError</label><input type="text" name="UrlError" value="http://localhost/fracaso.asp" /></br>
+    <input type="submit" />
+  </form>
+</body>
+
+
+
+
+   8.3 Página Retoma
+   El ejemplo muestra en pantalla la información que se recibe luego de un inicio y cierre de sesión
+   en caso de éxito.
+
+ <html>
+ <body>
+ Exito</br>
+ CodSence: <%response.write(request.form("CodSence"))%></br>
+ CodigoCurso: <%response.write(request.form("CodigoCurso"))%></br>
+ IdSesionAlumno: <%response.write(request.form("IdSesionAlumno"))%></br>
+ IdSesionSence: <%response.write(request.form("IdSesionSence"))%></br>
+ RunAlumno: <%response.write(request.form("RunAlumno"))%></br>
+ FechaHora: <%response.write(request.form("FechaHora"))%></br>
+ ZonaHoraria: <%response.write(request.form("ZonaHoraria"))%></br>
+ LineaCapacitacion: <%response.write(request.form("LineaCapacitacion"))%></br>
+ </body>
+ </html>
+
+
+
+
+   8.4 Página Error
+   El ejemplo muestra en pantalla la información que se recibe luego de un inicio y cierre de sesión
+   en caso de error.
+
+ <html>
+ <body>
+ Fracaso</br>
+ CodSence: <%response.write(request.form("CodSence"))%></br>
+ CodigoCurso: <%response.write(request.form("CodigoCurso"))%></br>
+ IdSesionAlumno: <%response.write(request.form("IdSesionAlumno"))%></br>
+ IdSesionSence: <%response.write(request.form("IdSesionSence"))%></br>
+ RunAlumno: <%response.write(request.form("RunAlumno"))%></br>
+ FechaHora: <%response.write(request.form("FechaHora"))%></br>
+ ZonaHoraria: <%response.write(request.form("ZonaHoraria"))%></br>
+ LineaCapacitacion: <%response.write(request.form("LineaCapacitacion "))%></br>
+ GlosaError: <%response.write(request.form("GlosaError"))%></br>
+ </body>
+ </html>
+
+
+
+
+                                                                                                     18
+9 Anexo 4: Franquicia Tributaria
+A continuación, se incluye información adicional sobre los parámetros a enviar en el inicio y cierre
+de sesión, para el caso particular de cursos de Franquicia Tributaria:
+
+
+
+   Parámetro                        Información Adicional Franquicia Tributaria
+
+                    Corresponde al Código SENCE del curso que realizará para la Empresa que
+                    contrató los servicios del OTEC, ya sea mediante un OTIC o directamente
+    CodSence
+                    por ellos mismos. Este código está incluido en los Datos del Curso de la
+                    orden de compra entregada al OTEC por el OTIC o la Empresa.
+
+
+                    Corresponde al curso a realizar por el OTEC para una Empresa, de una
+  CodigoCurso       nómina establecida de participantes. También se le conoce como ID de
+                    acción, Folio SENCE, Registro Único SENCE, y SENCENET.
+
+
+LineaCapacitacion   En el caso de Franquicia Tributaria siempre debe ser 3.
+
+
+                    Corresponde al RUN del participante en el curso a realizar, comunicado por
+   RunAlumno
+                    el OTIC o Empresa.
+
+
+
+
+                                                                                                 19
+Los valores de CodSence y CodigoCurso también se pueden obtener desde el sistema de Gestión
+de Acreditación de Participación de Curso (http://lce.sence.cl/CertificadoAsistencia), para los
+cursos comunicados a partir del 1 de julio 2019. En este sistema se puede hacer una búsqueda de
+los cursos del OTEC:
+
+
+
+
+En el resultado de la búsqueda, la información del CodigoCurso o ID Acción se encuentra en la
+primera columna. Se recomienda ordenar los resultados por Fecha de Inicio, para mostrar primero
+los cursos que van a iniciar. Con esta búsqueda podrá conocer todos los Códigos de Curso que han
+sido comunicados por el OTIC o Empresa.
+
+
+
+
+                                                                                             20
+10 Anexo 5: Programas Sociales
+
+A continuación, se incluye información adicional sobre los parámetros a enviar en el inicio y cierre
+de sesión, para el caso particular de cursos de Programas Sociales:
+
+   Parámetro                           Información Adicional Programas Sociales
+
+    CodSence        Para Programas Sociales o Becas Laborales, dejar en blanco.
+
+
+                    Corresponde al código del curso entregado por SIC, el cual identifica el
+  CodigoCurso       programa, llamado, año y curso a ejecutar, como, por ejemplo: RLAB-19-02-
+                    08-0071-1, BOTIC-SOFOF-19-12-13-0046.
+
+
+LineaCapacitacion   Para Programas Sociales o Becas Laborales siempre debe ser 1.
+
+
+
+Para generar las pruebas durante el proceso de integración, podrá utilizar las URL’s descritas en los
+puntos anteriores en Ambiente Test para probar el envío de parámetros y recepción de respuesta,
+sin registrar información en los sistemas productivos. Para ello considerar:
+
+   Parámetro                           Información Adicional Programas Sociales
+
+    CodSence        Dejar en Blanco.
+
+
+                    Utilizar el valor -1 (sólo en Ambiente de Test, en caso de que no cuenten
+  CodigoCurso
+                    con código curso aprobado E-Learning).
+
+
+LineaCapacitacion   Utilizar el valor 1.
+
+
+
+Una vez que el curso ya esté aprobado para ser ejecutado en modalidad E-Learning, ya sea por la
+Dirección Regional o el OTIC, según corresponda, se podrá realizar el cambio al ambiente
+productivo, modificando la URL al Ambiente Productivo y modificando el CodigoCurso al código
+que corresponda.
+
+
+
+                                                                                                  21
+
